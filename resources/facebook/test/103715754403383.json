@@ -1,0 +1,858 @@
+{
+    "message": [
+        {
+            "about": "Shop bán uy tín chất lượng - đa dạng mẫu mã",
+            "analytics_platform_metrics_config": {
+                "has_a2u": false,
+                "has_api_calls": false,
+                "has_app_invites": false,
+                "has_fb_login": false,
+                "has_game_requests": false,
+                "has_payments": false,
+                "has_referrals": false,
+                "has_stories": false,
+                "has_structured_requests": false
+            },
+            "app_links": {
+                "android": [
+                    {
+                        "app_name": "Facebook",
+                        "package": "com.facebook.katana",
+                        "url": "fb://page/103715754403383?referrer=app_link"
+                    }
+                ],
+                "ios": [
+                    {
+                        "app_name": "Facebook",
+                        "app_store_id": "284882215",
+                        "url": "fb://page/?id=103715754403383"
+                    }
+                ]
+            },
+            "asset_score": 0,
+            "can_checkin": true,
+            "can_post": true,
+            "can_use_any_name_for_child_location": true,
+            "can_viewer_advertise_with_posts": false,
+            "category": "Baby & children's clothing store",
+            "category_list": [
+                {
+                    "id": "192614304101075",
+                    "name": "Baby & children's clothing store"
+                }
+            ],
+            "checkins": 39,
+            "click_to_message_ads_default_destination": "MESSENGER",
+            "commerce_self_serve_onboard_flow_type": "default",
+            "context": {
+                "id": "b3Blbl9ncmFwaF9jb250ZAXh0OjEwMzcxNTc1NDQwMzM4MwZDZD"
+            },
+            "cover": {
+                "cover_id": "712289680212651",
+                "id": "712289680212651",
+                "offset_x": 50,
+                "offset_y": 73,
+                "source": "https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/274794972_712289676879318_7988877406988601989_n.png?_nc_cat=101&ccb=1-5&_nc_sid=1091cb&_nc_ohc=jk6oIuCnHv0AX9AEHkY&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan5-10.fna&oh=00_AT-auiptWFgm8ykfmPTCbprpcPh2tiiZkfizsjAeLqoUEQ&oe=6240B51F"
+            },
+            "ctx_responsiveness_based_default_destinations": "MESSENGER",
+            "display_subtext": "44b trần phú mộ lao hà đông hà nội・Hanoi, Vietnam・39 people checked in here",
+            "displayed_message_response_time": "AUTOMATIC",
+            "emails": [
+                "trinhminhkhoi7215@gmail.com"
+            ],
+            "engagement": {
+                "count": 84739,
+                "social_sentence": "84K people like this."
+            },
+            "fan_count": 84739,
+            "followers_count": 88389,
+            "global_brand_page_name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé",
+            "has_added_app": false,
+            "has_transitioned_to_new_page_experience": false,
+            "has_updated_profile_plus_perm_management": true,
+            "has_whatsapp_business_number": false,
+            "has_whatsapp_number": false,
+            "hours": {
+                "fri_1_close": "22:00",
+                "fri_1_open": "08:30",
+                "mon_1_close": "22:00",
+                "mon_1_open": "08:30",
+                "sat_1_close": "22:00",
+                "sat_1_open": "08:30",
+                "sun_1_close": "22:00",
+                "sun_1_open": "08:30",
+                "thu_1_close": "22:00",
+                "thu_1_open": "08:30",
+                "tue_1_close": "22:00",
+                "tue_1_open": "08:30",
+                "wed_1_close": "22:00",
+                "wed_1_open": "08:30"
+            },
+            "id": "103715754403383",
+            "is_always_open": false,
+            "is_chain": false,
+            "is_community_page": false,
+            "is_ctx_interop_enabled": false,
+            "is_eligible_for_profile_eca_creation": false,
+            "is_messenger_bot_get_started_enabled": true,
+            "is_messenger_platform_bot": true,
+            "is_nonprofit_page": false,
+            "is_owned": true,
+            "is_permanently_closed": false,
+            "is_promotable": false,
+            "is_published": true,
+            "is_unclaimed": false,
+            "is_verified": false,
+            "is_webhooks_subscribed": false,
+            "leadgen_has_fat_ping_crm_integration": false,
+            "leadgen_tos_accepted": false,
+            "link": "https://www.facebook.com/103715754403383",
+            "location": {
+                "city": "Hanoi",
+                "country": "Vietnam",
+                "latitude": 20.981636184356,
+                "longitude": 105.78928470612,
+                "street": "44b trần phú mộ lao hà đông hà nội",
+                "zip": "100000"
+            },
+            "merchant_review_status": "default",
+            "messenger_ads_default_icebreakers": [
+                "Can I make a purchase?",
+                "Can I see more products?",
+                "Is this available in my size?"
+            ],
+            "messenger_ads_default_quick_replies": [
+                "How much is the delivery fee?",
+                "Can I reserve this?",
+                "Can I order this please?"
+            ],
+            "messenger_ads_quick_replies_type": "PAGE_SHOP",
+            "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé",
+            "name_with_location_descriptor": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé",
+            "page_created_time": "2019-10-28T14:15:24+0000",
+            "page_token": "Đồ-Sơ-Sinh-Ếch-Cốm-Hệ-Thống-Mẹ-Bé-103715754403383",
+            "phone": "+84944022924",
+            "pickup_options": [
+                "in_store"
+            ],
+            "place_type": "PLACE",
+            "posts": [
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724396792335273/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724396792335273/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724396792335273/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "coordinates": {},
+                    "created_time": "2022-03-23T11:30:01+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "full_picture": "https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/277098545_724393669002252_122379354971662411_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-5&_nc_sid=8024bb&_nc_ohc=MzH2faKpmVIAX8gB_a2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT_LCXcQVwoPzP32kHMDhFhff4Cc1T_QjuS8JlwDWpDjMQ&oe=62406A72",
+                    "icon": "https://www.facebook.com/images/icons/photo.gif",
+                    "id": "103715754403383_724396792335273",
+                    "instagram_eligibility": "eligible",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": true,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/103715754403383/photos/a.127410782033880/724393689002250/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "🤷 FITOBIMBI PROPOLI - GIẢM TẤT CẢ CÁC TRIỆU CHỨNG: \n- Hắt hơi, sổ mũi\n- Ho đờm\n- Ngứa rát họng\nCảm lạnh rất dễ mắc và thường gây khó chịu cho bé. Nếu để lâu, có thể ảnh hưởng đến sinh hoạt hàng ngày, học hành của bé.\n👉MẸ NÊN DÙNG NGAYTRÊN NHÉ!\n- Propoli có thành phần từ thảo dược chuyên biệt cho các bệnh hô hấp như:\n+ Hoa Grindelia Robusta - giảm viêm, giảm đau rát họng, giảm ho kích ứng\n+ Tinh dầu thông - giúp sát trùng nhẹ, tăng cường miễn dịch, làm thông thoáng đường thở, giảm cảm lạnh.\n+ Keo ong - giúp sát trùng, kháng khuẩn, diệt virus, chống viêm, làm lành vết thương trên niêm mạc.\n- Propoli là siro lỏng vị chua ngọt hoa quả, rất dễ uống đối với bé.\n- Propoli được nhập khẩu nguyên hộp từ Italy, uy tín và đã được chứng nhận về nguồn gốc xuất xứ.\nĐối tượng sử dụng\nSản phẩm được khuyên dùng cho trẻ nhỏ và người lớn bị đau rát, khó chịu ở họng. Trẻ bị ho, viêm họng do cảm lạnh.\n🌟Dùng được cho trẻ từ 6 tháng tuổi.\nCách dùng hiệu quả\nDùng sau bữa ăn 30 phút – 1 tiếng theo liều dùng như sau:\n👉Trẻ từ 6 – 12 tháng tuổi: 15ml/ngày, tương đường với 1 thìa cafe\nTrẻ từ 1 – 12 tuổi: 15 – 30ml/ngày, có thể dùng khoảng 1-2 lần/ngày\nTrẻ trên 12 tuổi và người trưởng thành: 30ml/ngày, có thể chia ra thành 1-2 lần uống\nCách sử dụng của Fitobimbi Propoli vô cùng tiện lợi, mẹ có thể cho bé uống trực tiếp hoặc trộn chung với thức uống và các loại đồ ăn đều được, không làm giảm đi hiệu quả của thuốc.\n💥 CÙNG ẾCH CỐM XÓA TAN MỌI LO LẮNG 💥\n⭐ CƠ SỞ HÀ NỘI:\n🏠 CS1 : Online\n🏠 CS2: 783 Trương Định - 0852.299.995\n🏠 CS3: 7 Lạc Trung - 0374.731.131\n🏠 CS4: 396 Khương Đình - 0337.186.326\n🏠 CS5: 44B Trần Phú - Hà Đông - 0833.289.944\n🏠 CS6: Km13 Cầu Ngọc Hồi - 0879.376.285\n🏠 CS10: 110B1 Phạm Ngọc Thạch - 0968.004.556\n🏠 CS11: 434 Minh Khai - 032.807.2016\n⭐CƠ SỞ TỈNH:\n🏠 CS7: 148 - Lê Công Thanh - Phủ Lý - Hà Nam - 093.432.3300\n🏠 CS8: 1088 - Trần Hưng Đạo - Ninh Bình- 0388.773.688\n🏠 CS9: 118 - Thống Nhất - Thành Phố Hải Dương - 0372.449.974\nlink shoppe : https://shorten.asia/pGEzrcuE\nlink lazada :https://shorten.asia/AnjhHM5",
+                    "message_tags": [],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Photos from Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé's post",
+                    "object_id": "724393689002250",
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724396792335273/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Công khai",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724396792335273",
+                    "promotion_status": "ineligible",
+                    "status_type": "added_photos",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T11:30:04+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724458055662480/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724458055662480/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724458055662480/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "coordinates": {},
+                    "created_time": "2022-03-23T10:43:51+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "id": "103715754403383_724458055662480",
+                    "instagram_eligibility": "ineligible_post_no_media",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "Cuối tuần  săn sale ếch cốm nào các mẹ ơi",
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724458055662480/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724458055662480",
+                    "promotion_status": "ineligible",
+                    "shares": {
+                        "count": 1
+                    },
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "status",
+                    "updated_time": "2022-03-23T11:04:05+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724388019002817/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724388019002817/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724388019002817/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "coordinates": {},
+                    "created_time": "2022-03-23T10:00:01+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "full_picture": "https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/277078083_724385575669728_4616464889005065118_n.jpg?stp=dst-jpg_p720x720&_nc_cat=104&ccb=1-5&_nc_sid=8024bb&_nc_ohc=dhedbsWY3W4AX-l4goW&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan3-4.fna&oh=00_AT-sQYpV7l3PKqCtRWsS26wNLyFsZhRFBypGaJj-hx_LSw&oe=624009B4",
+                    "icon": "https://www.facebook.com/images/icons/photo.gif",
+                    "id": "103715754403383_724388019002817",
+                    "instagram_eligibility": "ineligible_caption_too_long",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/103715754403383/photos/a.127410782033880/724385585669727/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "🤰 🤰ELEVIT BẦU ÚC - BỒI BỔ CHO MẸ CHẮC KHỎE CHO BÉ - MẪU MỚI NHẤT ! ❤️❤️\n👉 Nếu nói Elevit Úc chỉ đứng thứ 2 thì e khẳng định chỉ có thuốc bổ mẹ bầu nc nào dám cho mình đứng thứ 1 cả, tự tin uống nhé các mẹ \n🤭Chỉ cần 1v/1 ngày là bạn có thể an tâm hôm nay con ổn,nó cung cấp đầy đủ tất cả các vitamin cần thiết\nChống dị tật thai nhi\nGiúp trẻ phát triển não bộ hoàn hảo\n🍎Chị em bạn dì nào đang hay sắp bầu thì đừng bỏ qua ELEVIT nhé!!!\n🍉 Elevit Úc bà bầu đã quá nổi tiếng chắc e không cần giới thiệu nhiều, chắc chỉ cần điểm qua ý chính cho các mẹ chưa biết tham khảo thôi nhé!!!\n‼️ Rất nhiều review trên mạng về Elevit Úc cung cấp dinh dưỡng khổng lồ như DHA, Axit Folic, Sắt, ~> Kẽm...có nguy cơ thiếu hụt trong các bữa ăn và cao hơn hẳn so với các thương hiệu vtm như Nature Made, Obimin,  đây là những chất dinh dưỡng đảm bảo tới thể chất của mẹ🤰, sức khỏe và sự phát triển của thai nhi).\n📌Đặc biệt, Elevit còn chứa thành phần I ốt, hình thành thị giác và trí não của bé khi còn trong bụng mẹ. Ngoài ra còn hỗ trợ thụ thai đối với nhiều mẹ hiếm muộn, chống các dị tật thai nhi và tránh hẳn các bệnh lý, biến chứng cho phụ nữ sau sinh.\n📌Axit Folic là dưỡng chất có tác dụng ngăn ngừa khuyết tật ống thần kinh được bổ sung với hàm lượng lên đến 800 microgram.\n📌Sắt cũng được cung cấp với hàm lượng lên đến 60mg.\n📌KHÔNG GÂY TÁO BÓN, ko sử dụng chất bảo quản, Ko chứa cồn, Gluten, chất tạo màu, tạo mùi....\n📌Vitamin bà bầu Elevit được kiểm chứng lâm sàng là có tác dụng giảm tới 92% rủi ro các bệnh liên quan đến ống thần kinh, nứt đốt sống...\n💁 Cách uống : Chỉ 01 viên vitamin mỗi ngày (dùng được tầm 3 tháng 10 ngày)\n💥 CÙNG ẾCH CỐM XÓA TAN MỌI LO LẮNG 💥\n⭐ CƠ SỞ HÀ NỘI:\n🏠 CS1 : Online\n🏠 CS2: 783 Trương Định - 0852.299.995\n🏠 CS3: 7 Lạc Trung - 0374.731.131\n🏠 CS4: 396 Khương Đình - 0337.186.326\n🏠 CS5: 44B Trần Phú - Hà Đông - 0833.289.944\n🏠 CS6: Km13 Cầu Ngọc Hồi - 0879.376.285\n🏠 CS10: 110B1 Phạm Ngọc Thạch - 0968.004.556\n🏠 CS11: 434 Minh Khai - 032.807.2016\n⭐CƠ SỞ TỈNH:\n🏠 CS7: 148 - Lê Công Thanh - Phủ Lý - Hà Nam - 093.432.3300\n🏠 CS8: 1088 - Trần Hưng Đạo - Ninh Bình- 0388.773.688\n🏠 CS9: 118 - Thống Nhất - Thành Phố Hải Dương - 0372.449.974\nlink shoppe : https://shorten.asia/pGEzrcuE\nlink lazada :https://shorten.asia/AnjhHM5j",
+                    "message_tags": [],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Photos from Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé's post",
+                    "object_id": "724385585669727",
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724388019002817/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724388019002817",
+                    "promotion_status": "ineligible",
+                    "status_type": "added_photos",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T10:00:04+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724432195665066/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724432195665066/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724432195665066/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "coordinates": {},
+                    "created_time": "2022-03-23T09:45:30+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "full_picture": "https://scontent.fhph2-1.fna.fbcdn.net/v/t39.30808-6/277094980_724431975665088_1115537281674754180_n.jpg?stp=dst-jpg_s720x720&_nc_cat=109&ccb=1-5&_nc_sid=0be424&_nc_ohc=0VlFP1CtSD8AX95cF34&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhph2-1.fna&oh=00_AT-k4h32QwVdtU1QZ5EoRwZZKgfh8ir4xJNPZas18GC8uQ&oe=6240CFDB",
+                    "icon": "https://www.facebook.com/images/icons/photo.gif",
+                    "id": "103715754403383_724432195665066",
+                    "instagram_eligibility": "eligible",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": true,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/103715754403383/photos/a.723552312419721/724431978998421/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "𝑯𝒂̣ 𝒔𝒂𝒏𝒈 𝒕𝒓𝒐̛̀𝒊 đ𝒐̂̉ 𝒏𝒂̆́𝒏𝒈 𝒗𝒂̀𝒏𝒈\n𝑯𝒐̂𝒎 𝒏𝒂𝒚 𝒎𝒆̣ đ𝒂̃ 𝒎𝒖𝒂 𝒉𝒂̀𝒏𝒈 𝑼𝒂𝒍𝒂𝑹𝒐𝒈𝒐 𝒄𝒉𝒖̛𝒂 𝒏𝒉𝒊̉? 😍😍\n🍎 BST Xuân Hè mới sẽ làm các mẹ hài lòng không chỉ bởi chất liệu tuyệt vời mà còn bởi họa tiết ngộ nghĩnh, style chuẩn Hàn. Một sự mềm tan trên từng ngón tay, hút mồ hôi siêu nhanh cho bé vận động cả ngày dài thật thoải mái 🌟\n💐 UalaRogo SS2022 thiên về sự tinh tế, màu sắc có chọn lọc nhưng vẫn đem lại một hình ảnh mới xuyên suốt  mùa thời trang lớn nhất trong năm.\n\n💥 CÙNG ẾCH CỐM XÓA TAN MỌI LO LẮNG 💥\n⭐ CƠ SỞ HÀ NỘI:\n🏠 CS1 : Online\n🏠 CS2: 783 Trương Định - 0852.299.995\n🏠 CS3: 7 Lạc Trung - 0374.731.131\n🏠 CS4: 396 Khương Đình - 0337.186.326\n🏠 CS5: 44B Trần Phú - Hà Đông - 0833.289.944\n🏠 CS6: Km13 Cầu Ngọc Hồi - 0879.376.285\n🏠 CS10: 110B1 Phạm Ngọc Thạch - 0968.004.556\n🏠 CS11: 434 Minh Khai - 032.807.2016\n⭐CƠ SỞ TỈNH:\n🏠 CS7: 148 - Lê Công Thanh - Phủ Lý - Hà Nam - 093.432.3300\n🏠 CS8: 1088 - Trần Hưng Đạo - Ninh Bình- 0388.773.688\n🏠 CS9: 118 - Thống Nhất - Thành Phố Hải Dương - 0372.449.974\nlink shoppe : https://shorten.asia/pGEzrcuE\nlink lazada :https://shorten.asia/AnjhHM5",
+                    "message_tags": [],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "object_id": "724431978998421",
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724432195665066/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724432195665066",
+                    "promotion_status": "ineligible",
+                    "status_type": "added_photos",
+                    "story": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé added a new photo.",
+                    "story_tags": [
+                        {
+                            "id": "103715754403383",
+                            "length": 35,
+                            "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé",
+                            "offset": 0,
+                            "type": "page"
+                        }
+                    ],
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T09:45:35+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724407829000836/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724407829000836/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724407829000836/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "coordinates": {},
+                    "created_time": "2022-03-23T09:04:03+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "full_picture": "https://scontent.fhan5-3.fna.fbcdn.net/v/t39.30808-6/277102497_724407552334197_38562512982473796_n.jpg?stp=dst-jpg_p180x540&_nc_cat=106&ccb=1-5&_nc_sid=0be424&_nc_ohc=9J0i360ieFoAX8EzAqO&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan5-3.fna&oh=00_AT8aHOzF7pWGvtzHh5TlCjUMltwI9DUyDV2IaSlb1RsWTg&oe=62409921",
+                    "icon": "https://www.facebook.com/images/icons/photo.gif",
+                    "id": "103715754403383_724407829000836",
+                    "instagram_eligibility": "eligible",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": true,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/103715754403383/photos/a.719816919459927/724407555667530/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "Sữa Cho Bé Bất Dung Nạp LACTOSE Aptamil Lactose Free Anh - 400g 😘💥\n+ APTAMIL LACTOSE - FREE. Đây là loại sữa với chỉ số đường huyết rất thấp. Sữa bột không đường lactose vẫn có ĐẦY ĐỦ DƯỠNG CHẤT như các loại sữa bột thông thường. Điểm khác biệt ở loại sữa này là không chứa lactose\n+ Aptamil Lactose Free dành cho trẻ không dung nạp đường sữa hoặc đường sucrose hoặc những trẻ bị tiêu chảy, đầy hơi hoặc gió do không dung nạp đường sữa tạm thời. Nó là một công thức đầy đủ dinh dưỡng. DÀNH CHO BÉ BẤT DUNG NẠP LACTOSE, TIÊU CHẢY & RỐI LOẠN TIÊU HÓA\n+ Phù hợp với bé dị ứng đường Lactose dùng cho con liên tục quanh năm, free lactose nhưng dinh dưỡng vẫn đầy đủ phong phú\n+ Phù hợp với bé bị đi ngoài rối loạn tiêu hoá, dùng đến khi con khỏi hẳn ổn định tiêu hoá mới chuyển sang sữa khác nhé\n- Khi con bị tiêu chảy, ĐIỀU QUAN TRỌNG NHẤT với những mẹ đang cho con dùng SỮA CÔNG THỨC là phải DỪNG LẠI NGAY và chuyển cho con dùng dòng FREE LACTOSE nếu KHÔNG MUỐN tình trạng của con CÀNG TỆ HƠN…\n+ Khi bé bị tiêu chảy, dịch tiêu hóa ít hơn, hoạt tính men cũng bị giảm, việc chuyển hóa đạm, mỡ, đường bị rối loạn, chức năng tái hấp thu nước và dinh dưỡng ở ruột non cũng gặp khó khăn, khiến cho phần lớn dinh dưỡng bị thải ra ngoài.\n+ Đối với bé bị tiêu chảy, mẹ cần hạn chế sữa bò và các chế phẩm từ sữa bò, trừ sữa chua không đường. Vì chúng có chứa lactose, có thể khiến cho tình trạng của bé trầm trọng hơn.\n\n💥 CÙNG ẾCH CỐM XÓA TAN MỌI LO LẮNG 💥\n⭐ CƠ SỞ HÀ NỘI:\n🏠 CS1 : Online\n🏠 CS2: 783 Trương Định - 0852.299.995\n🏠 CS3: 7 Lạc Trung - 0374.731.131\n🏠 CS4: 396 Khương Đình - 0337.186.326\n🏠 CS5: 44B Trần Phú - Hà Đông - 0833.289.944\n🏠 CS6: Km13 Cầu Ngọc Hồi - 0879.376.285\n🏠 CS10: 110B1 Phạm Ngọc Thạch - 0968.004.556\n🏠 CS11: 434 Minh Khai - 032.807.2016\n⭐CƠ SỞ TỈNH:\n🏠 CS7: 148 - Lê Công Thanh - Phủ Lý - Hà Nam - 093.432.3300\n🏠 CS8: 1088 - Trần Hưng Đạo - Ninh Bình- 0388.773.688\n🏠 CS9: 118 - Thống Nhất - Thành Phố Hải Dương - 0372.449.974\nlink shoppe : https://shorten.asia/pGEzrcuE\nlink lazada :https://shorten.asia/AnjhHM5j",
+                    "message_tags": [],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "object_id": "724407555667530",
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724407829000836/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724407829000836",
+                    "promotion_status": "ineligible",
+                    "status_type": "added_photos",
+                    "story": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé added a new photo.",
+                    "story_tags": [
+                        {
+                            "id": "103715754403383",
+                            "length": 35,
+                            "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé",
+                            "offset": 0,
+                            "type": "page"
+                        }
+                    ],
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T09:04:06+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724361362338816/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724361362338816/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724361362338816/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "coordinates": {},
+                    "created_time": "2022-03-23T07:51:50+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "full_picture": "https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/277298013_724360055672280_7489746370657209573_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-5&_nc_sid=8024bb&_nc_ohc=ReG2ueJJYmoAX9yP65Q&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn5-12.fna&oh=00_AT8Z4GialzEjHsOW30nboFFWi-JjwmMxvB4pUvD9uTnz4g&oe=6240E5B1",
+                    "icon": "https://www.facebook.com/images/icons/photo.gif",
+                    "id": "103715754403383_724361362338816",
+                    "instagram_eligibility": "eligible",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": true,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/103715754403383/photos/a.127410782033880/724360065672279/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "🍊🍊🍊 𝐕𝐢𝐞̂𝐧 𝐬𝐮̉𝐢 𝐇𝐎𝐋𝐋𝐀𝐍𝐃 𝐁𝐀𝐑𝐑𝐄𝐓𝐓 𝐕𝐈𝐓𝐀𝐌𝐈𝐍 𝐂 & 𝐙𝐈𝐍 𝐂 𝐎𝐑𝐀𝐍𝐆𝐄, 𝟐𝟎 𝐯𝐢𝐞̂𝐧 🍹🍹🍹 Hàng #HOT em chưa kịp lên bài đã hết sạch hàng, hôm nay đã về được lô tiếp theo các mẹ ơiiii\n🔖🔖🔖 𝐕𝐈𝐓𝐀𝐌𝐈𝐍 𝐂 𝐕𝐀̀ 𝐊𝐄̃𝐌 - 𝟐 𝐓𝐇𝐀̀𝐍𝐇 𝐏𝐇𝐀̂̀𝐍 𝐊𝐇𝐎̂𝐍𝐆 𝐓𝐇𝐄̂̉ 𝐓𝐇𝐈𝐄̂́𝐔 𝐂𝐇𝐎 𝐇𝐄̣̂ 𝐌𝐈𝐄̂̃𝐍 𝐃𝐈̣𝐂𝐇 𝐂𝐔̉𝐀 𝐂𝐎̛ 𝐓𝐇𝐄̂̉\n⚜️⚜️⚜️ Vitamin C và kẽm ZinC mỗi loại có chức năng riêng, nhưng khi kết hợp 2 thứ lại thì sẽ phát huy tác dụng kép \n🔰 X2 sức đề kháng\n🔰 Phòng ngừa cảm cúm\n🔰 Hồi phục thể lực nhanh chóng, tốt cho da, tóc, móng.\n🔰 Giúp giảm căng thẳng mệt mỏi, tăng sức đề kháng\n🔰 Bổ sung kẽm cho cơ thể tăng sức đề kháng, chống viêm nhiễm, chảy máu chân răng.\n🔰 Trẻ hoá làn da\n🔰 Nhanh lành vết thương\n🍊🍊🍊Đặc biệt, C có vị Cam cực kỳ dễ uống và thơm ngon chứ không gắt vị như các loại C thông thường đâu ạ \n💥 CÙNG ẾCH CỐM XÓA TAN MỌI LO LẮNG 💥\n⭐ CƠ SỞ HÀ NỘI:\n🏠 CS1 : Online\n🏠 CS2: 783 Trương Định - 0852.299.995\n🏠 CS3: 7 Lạc Trung - 0374.731.131\n🏠 CS4: 396 Khương Đình - 0337.186.326\n🏠 CS5: 44B Trần Phú - Hà Đông - 0833.289.944\n🏠 CS6: Km13 Cầu Ngọc Hồi - 0879.376.285\n🏠 CS10: 110B1 Phạm Ngọc Thạch - 0968.004.556\n🏠 CS11: 434 Minh Khai - 032.807.2016\n⭐CƠ SỞ TỈNH:\n🏠 CS7: 148 - Lê Công Thanh - Phủ Lý - Hà Nam - 093.432.3300\n🏠 CS8: 1088 - Trần Hưng Đạo - Ninh Bình- 0388.773.688\n🏠 CS9: 118 - Thống Nhất - Thành Phố Hải Dương - 0372.449.974\nlink shoppe : https://shorten.asia/pGEzrcuE\nlink lazada :https://shorten.asia/AnjhHM5j",
+                    "message_tags": [
+                        {
+                            "id": "488140807914336",
+                            "length": 4,
+                            "name": "#hot",
+                            "offset": 75
+                        }
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Photos from Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé's post",
+                    "object_id": "724360065672279",
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724361362338816/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Công khai",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724361362338816",
+                    "promotion_status": "ineligible",
+                    "status_type": "added_photos",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T07:51:50+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724280742346878/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724280742346878/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724280742346878/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "caption": "QUẦN ÁO HÈ CỘC EM VỀ NHIỀU RỒI ĐẤY Ạ ✨ MẪU MÃ ĐA DẠNG CÓ TỪ SIZE TỪ SƠ SINH Ạ ✨",
+                    "coordinates": {},
+                    "created_time": "2022-03-23T06:18:44+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "full_picture": "https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/276150494_724280592346893_4270352705773987931_n.jpg?stp=dst-jpg_s720x720&_nc_cat=107&ccb=1-5&_nc_sid=0be424&_nc_ohc=XXtbtqEcaP8AX8H_wKl&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn5-10.fna&oh=00_AT87tXWtL-v26jf1pg40BAb_R5uB6hUhymajIqBPQ4kdxw&oe=6240C223",
+                    "icon": "https://www.facebook.com/images/icons/photo.gif",
+                    "id": "103715754403383_724280742346878",
+                    "instagram_eligibility": "eligible",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": true,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/103715754403383/photos/a.723552312419721/724280609013558/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "QUẦN ÁO NHIỀU MẪU MÃ ĐA DẠNG CHO CÁC MOM THAM KHẢO Ạ",
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Photos from Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé's post",
+                    "object_id": "724280609013558",
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724280742346878/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724280742346878",
+                    "promotion_status": "ineligible",
+                    "status_type": "added_photos",
+                    "story": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé added 4 new photos.",
+                    "story_tags": [
+                        {
+                            "id": "103715754403383",
+                            "length": 35,
+                            "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé",
+                            "offset": 0,
+                            "type": "page"
+                        }
+                    ],
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T06:18:44+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724251145683171/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724251145683171/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724251145683171/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "coordinates": {},
+                    "created_time": "2022-03-23T05:03:49+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "full_picture": "https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/276138814_724250965683189_386958717319963779_n.jpg?stp=dst-jpg_s720x720&_nc_cat=102&ccb=1-5&_nc_sid=0be424&_nc_ohc=Ougyp5nqSW8AX_J7mPm&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan3-1.fna&oh=00_AT-fQS2BJCYg42sJSlybrz5gF9divmMae5tIQamSq4deig&oe=623F83E9",
+                    "icon": "https://www.facebook.com/images/icons/photo.gif",
+                    "id": "103715754403383_724251145683171",
+                    "instagram_eligibility": "ineligible_caption_too_long",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/103715754403383/photos/a.719816919459927/724250969016522/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "𝐒𝐔̛̃𝐀 𝐀𝐏𝐓𝐀𝐌𝐈𝐋 𝐎𝐑𝐆𝐀𝐍𝐈𝐂 𝐔𝐊🇬🇧\n☘️Dòng sữa Mát Đỉnh Cao, Siêu Công Nghệ, Siêu Sạch, 100% Organic, sữa vị Nhạt Thơm Ngon☘️\n😘Hãng Nutricia UK đã tạo ra công thức hữu cơ này với sự lưu tâm đến quyền lợi động vật và hành tinh. Sữa Aptamil UK Organic lấy từ những con bò được chăn thả trên những cánh đồng trống khi thời tiết cho phép, phù hợp với các tiêu chuẩn 100% hữu cơ.\n🥰Hãng Nutricia UK hợp tác với những nông trại uy tín nhất Vương Quốc Anh vì chất lượng sữa hưu cơ đạt tiêu chuẩn cao là ưu tiên hàng đầu của hãng. Sản phẩm Aptamil Organic UK ra đời vì Nhiều Bậc Cha Mẹ ở Anh quan tâm khắt khe đến thanh khiết, siêu sạch trong sữa cho con nhỏ.\n💯 Thành phần đến từ các trang trại sử dụng ít thuốc trừ sâu hơn và tránh sử dụng phân bón nhân tạo, đồng thời tuân thủ các tiêu chuẩn phúc lợi động vật cao nhất ở Anh.\n🪴Chứng nhận hữu cơ độc lập để đảm bảo rằng Aptamil Organic UK đáp ứng các tiêu chuẩn hữu cơ về xã hội và môi trường ở Châu Âu.  Các sản phẩm hữu cơ của Nutricia được chứng nhận bởi Hiệp hội hữu cơ của EU.\n‼️Để đạt đc chứng nhận siêu sạch 100% Organic phù hợp cho trẻ nhỏ thì phải trải qua sự kiểm duyệt siêu khắt khe ạ ‼️\n✅ Cung cấp các chất cần thiết cho trẻ nhỏ: \n💠Sắt hỗ trợ phát triển nhận thức bình thường, DHA(Omega-3 LCPs) hàm lượng cao, không Hormon tăng trưởng,Kẽm, Canxi và tất tần tật các chất cần thiết ở trẻ nhỏ. \n🔆Chứa Vitamin D để hỗ trợ chức năng bình thường của hệ thống miễn dịch. 🔆Không có dầu cọ và tinh bột.🔆 Hữu cơ nhẹ nhàng với GOS / FOS chất xơ dinh dưỡng nên rất mát, không gây táo bón🔆.\n☘️ Aptamil Organic UK chứa nhiều nước và chứa lactose là dạng carbohydrate duy nhất làm hàm lượng protein thấp trong sữa công thức trước và đặc biệt dễ tiêu hóa cho trẻ sơ sinh.\n⚜️Trong hơn 40 năm, Nutricia UK đã nghiên cứu các đặc tính tuyệt vời của sữa mẹ để tạo ra Aptamil Organic UK ĐỈNH CAO giúp nuôi dưỡng, phát triển và hỗ trợ hệ thống miễn dịch của trẻ.\n\n💥 CÙNG ẾCH CỐM XÓA TAN MỌI LO LẮNG 💥\n⭐ CƠ SỞ HÀ NỘI:\n🏠 CS1 : Online\n🏠 CS2: 783 Trương Định - 0852.299.995\n🏠 CS3: 7 Lạc Trung - 0374.731.131\n🏠 CS4: 396 Khương Đình - 0337.186.326\n🏠 CS5: 44B Trần Phú - Hà Đông - 0833.289.944\n🏠 CS6: Km13 Cầu Ngọc Hồi - 0879.376.285\n🏠 CS10: 110B1 Phạm Ngọc Thạch - 0968.004.556\n🏠 CS11: 434 Minh Khai - 032.807.2016\n⭐CƠ SỞ TỈNH:\n🏠 CS7: 148 - Lê Công Thanh - Phủ Lý - Hà Nam - 093.432.3300\n🏠 CS8: 1088 - Trần Hưng Đạo - Ninh Bình- 0388.773.688\n🏠 CS9: 118 - Thống Nhất - Thành Phố Hải Dương - 0372.449.974\nlink shoppe : https://shorten.asia/pGEzrcuE\nlink lazada :https://shorten.asia/AnjhHM5j",
+                    "message_tags": [],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "object_id": "724250969016522",
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724251145683171/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724251145683171",
+                    "promotion_status": "ineligible",
+                    "shares": {
+                        "count": 1
+                    },
+                    "status_type": "added_photos",
+                    "story": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé added a new photo.",
+                    "story_tags": [
+                        {
+                            "id": "103715754403383",
+                            "length": 35,
+                            "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé",
+                            "offset": 0,
+                            "type": "page"
+                        }
+                    ],
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T05:03:50+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724242902350662/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724242902350662/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724242902350662/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "caption": "QUẦN ÁO HÈ CỘC EM VỀ NHIỀU RỒI ĐẤY Ạ ✨ MẪU MÃ ĐA DẠNG CÓ TỪ SIZE TỪ SƠ SINH Ạ ✨",
+                    "coordinates": {},
+                    "created_time": "2022-03-23T04:45:11+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "full_picture": "https://scontent.fhph1-3.fna.fbcdn.net/v/t39.30808-6/276201495_724242499017369_7723901697314996348_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-5&_nc_sid=0be424&_nc_ohc=KZRqB6heHbEAX_-ECCP&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhph1-3.fna&oh=00_AT-N8iIqh0XLpW2mj2ySPFu1-MXlsss7RCs_mJJrTFGgbg&oe=62405407",
+                    "icon": "https://www.facebook.com/images/icons/photo.gif",
+                    "id": "103715754403383_724242902350662",
+                    "instagram_eligibility": "eligible",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": true,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/103715754403383/photos/a.723552312419721/724242525684033/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "QUẦN ÁO NHIỀU MẪU MÃ ĐA DẠNG CHO CÁC MOM THAM KHẢO Ạ",
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Photos from Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé's post",
+                    "object_id": "724242525684033",
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724242902350662/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724242902350662",
+                    "promotion_status": "ineligible",
+                    "status_type": "added_photos",
+                    "story": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé added 6 new photos.",
+                    "story_tags": [
+                        {
+                            "id": "103715754403383",
+                            "length": 35,
+                            "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé",
+                            "offset": 0,
+                            "type": "page"
+                        }
+                    ],
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T04:45:11+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724240345684251/",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724240345684251/",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/103715754403383/posts/724240345684251/",
+                            "name": "Share"
+                        }
+                    ],
+                    "app_installs_eligibility": false,
+                    "coordinates": {},
+                    "created_time": "2022-03-23T04:39:47+0000",
+                    "from": {
+                        "id": "103715754403383",
+                        "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé"
+                    },
+                    "full_picture": "https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/276259357_724220269019592_3008501698565544717_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-5&_nc_sid=0be424&_nc_ohc=Tm9eYfS3PYwAX9sese_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan5-11.fna&oh=00_AT9Q-glAXxOnIiNen8tRDoEpcFAHm_o1-69Jn3khK9Dddw&oe=62403C8C",
+                    "icon": "https://www.facebook.com/images/icons/photo.gif",
+                    "id": "103715754403383_724240345684251",
+                    "instagram_eligibility": "eligible",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": true,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/103715754403383/photos/a.719816919459927/724220272352925/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "❌ 𝐒𝐔̛̃𝐀 𝐁𝐋𝐀𝐂𝐊 𝐌𝐎𝐑𝐄 Đ𝐔̉ 𝐒𝐎̂́ 𝟏, 𝟐, 𝟑 ❌\n💥 SỮA BLACKMORE - DÒNG SỮA TĂNG CÂN RẤT NỔI TIẾNG CỦA ÚC ‼️ 💥\nHẳn mẹ nào cũng biết Blackmore rất nổi tiếng về sản xuất vitamin và thực phẩm chức năng rồi đúng không ạ ? Sữa của Blackmore cũng đình đám ko kém ạ.\nĐ𝗮̂𝘆 𝗹𝗮̀ 𝘀𝘂̛̃𝗮 𝗽𝗵𝗮́𝘁 𝘁𝗿𝗶𝗲̂̉𝗻 𝘁𝗼𝗮̀𝗻 𝗱𝗶𝗲̣̂𝗻 𝗻𝗵𝗲́ 𝗺𝗻 : 𝗖𝗛𝗜𝗘̂̀𝗨 𝗖𝗔𝗢 - 𝗧𝗥𝗜́ 𝗡𝗔̃𝗢 - 𝗖𝗔̂𝗡 𝗡𝗔̣̆𝗡𝗚\nĐạt đủ 2 tiêu chí cực kỳ khắt khe của sữa công thức\n✅ 𝒔𝒖̛̃𝒂 𝒗𝒊̣ 𝒕𝒉𝒐̛𝒎 𝒅𝒆̂̃ 𝒖𝒐̂́𝒏𝒈 , 𝒌𝒐 𝒕𝒂́𝒐\n✅ 𝒅𝒊𝒏𝒉 𝒅𝒖̛𝒐̛̃𝒏𝒈 𝒄𝒂𝒐 𝒕𝒂̆𝒏𝒈 𝒄𝒂̂𝒏 𝒕𝒐̂́𝒕\n✅ Sữa vị thơm dễ uống , ko táo.\n✅ Dinh dưỡng cao tăng cân tốt.\n✅ Sữa ngọt mát chứ k ngọt sắc như những dòng tăng cân khác.\n✅Hãng Blackmores đình đám đã bắt đầu sản xuất sữa bột cho trẻ với công thức hoàn hảo có tới 25 vitamin và khoáng chất thiết yếu cho bé!\n✅ Blackmore cũng sản xuất sữa công thức ạ\nBlackmores Follow-On Formula có công thức độc đáo, hỗ trợ nhu cầu dinh dưỡng của trẻ như là một phần của chế độ ăn hỗn hợp với 25 chất dinh dưỡng bao gồm các vitamin thiết yếu, khoáng chất và prebiotics.\n🍼 Số 1 (0-6m)\n🍼 Số 2 (6-12m)\n🍼 Số 3 (12m+) .\n\n💥 CÙNG ẾCH CỐM XÓA TAN MỌI LO LẮNG 💥\n⭐ CƠ SỞ HÀ NỘI:\n🏠 CS1 : Online\n🏠 CS2: 783 Trương Định - 0852.299.995\n🏠 CS3: 7 Lạc Trung - 0374.731.131\n🏠 CS4: 396 Khương Đình - 0337.186.326\n🏠 CS5: 44B Trần Phú - Hà Đông - 0833.289.944\n🏠 CS6: Km13 Cầu Ngọc Hồi - 0879.376.285\n🏠 CS10: 110B1 Phạm Ngọc Thạch - 0968.004.556\n🏠 CS11: 434 Minh Khai - 032.807.2016\n⭐CƠ SỞ TỈNH:\n🏠 CS7: 148 - Lê Công Thanh - Phủ Lý - Hà Nam - 093.432.3300\n🏠 CS8: 1088 - Trần Hưng Đạo - Ninh Bình- 0388.773.688\n🏠 CS9: 118 - Thống Nhất - Thành Phố Hải Dương - 0372.449.974\nlink shoppe : https://shorten.asia/pGEzrcuE\nlink lazada :https://shorten.asia/AnjhHM5j",
+                    "message_tags": [],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "object_id": "724220272352925",
+                    "permalink_url": "https://www.facebook.com/103715754403383/posts/724240345684251/",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "103715754403383_724240345684251",
+                    "promotion_status": "ineligible",
+                    "shares": {
+                        "count": 1
+                    },
+                    "status_type": "added_photos",
+                    "story": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé added a new photo.",
+                    "story_tags": [
+                        {
+                            "id": "103715754403383",
+                            "length": 35,
+                            "name": "Đồ Sơ Sinh Ếch Cốm - Hệ Thống Mẹ Bé",
+                            "offset": 0,
+                            "type": "page"
+                        }
+                    ],
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T04:39:48+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                }
+            ],
+            "single_line_address": "44b trần phú mộ lao hà đông hà nội, Hanoi, Vietnam 100000",
+            "start_info": {
+                "type": "Unspecified"
+            },
+            "supports_donate_button_in_live_video": false,
+            "talking_about_count": 5586,
+            "temporary_status": "operating_as_usual",
+            "verification_status": "not_verified",
+            "voip_info": {
+                "has_mobile_app": false,
+                "has_permission": false,
+                "is_callable": false,
+                "is_callable_webrtc": false,
+                "is_pushable": false,
+                "reason_code": 1356044,
+                "reason_description": "This person isn't available right now."
+            },
+            "website": "http://Echcom.vn",
+            "were_here_count": 39
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{"post_params: create":
+{
+	"command": "create",
+	"url": "https://www.facebook.com/t4iv0i",
+	"hashtag": "#KOCvietnam",
+	"fields": ["is_verified", "name", "follower_count", "description"]
+},
+"post_params: update":
+{
+	"command": "update",
+	"database": "facebook",
+	"collection_name": "User",
+	"filters": {
+		"created_at__gte": "2022-01-01T00:00:00",
+		"created_at__lte": "2022-02-01T00:00:00"
+	},
+	"fields": ["name", "username", "follower_count", "description"],
+	"connections":[
+		{
+			"connection_name": "posts",
+			"fields": ["content", "like_count", "love_count"],
+			"condition": {"duration": "30 days"}
+		},
+		{
+			"connection_name": "photo",
+			"fields": ["content", "like_count", "love_count"],
+			"condition": {"count": "100"}
+		}
+	]
+},
+"get_info: cache":
+{
+	"database": "cache",
+	"collection": "Cache",
+	"filter": {
+		"username": "koc",
+		"uuid": "eb8981bc-92f3-48ca-8b3f-ed52f4d0c4b5"
+	}
+},
+"get_info: database":
+{
+	"database": "facebook",
+	"collection": "User",
+	"filters": {
+		"created_at__gte": "2022-01-01T00:00:00",
+		"created_at__lte": "2022-02-01T00:00:00"
+	},
+	"fields": ["name", "username", "follower_count", "description"],
+	"connections":[
+		{
+			"collection": "Post",
+			"fields": ["content", "like_count", "love_count"],
+			"filters": {
+				"created_at__gte": "2022-01-01T00:00:00",
+				"created_at__lte": "2022-03-01T00:00:00"
+			}
+		},
+		{
+			"collection": "Photo",
+			"fields": ["content", "like_count", "love_count"],
+			"filters": {
+				"created_at__gte": "2022-01-01T00:00:00",
+				"created_at__lte": "2022-03-01T00:00:00"
+			}
+		}
+	]
+},
+"get_batch_info":
+{
+	"limit": "100"
+}}
+
+

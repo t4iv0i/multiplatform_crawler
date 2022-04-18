@@ -1,0 +1,833 @@
+{
+    "message": [
+        {
+            "analytics_user_config": {
+                "id": "132180059368070"
+            },
+            "can_review_measurement_request": false,
+            "context": {
+                "id": "dXNlcl9jb250ZAXh0OgGQ8QYWmUWm98RHc0c99QisiDsIMyMOa2iczSMMVZA0oBvcJJiwccShVp63gQxjsB3ZAgubXoCgKdaR81OLbVzPf7qUOxr4WahxWsFH30NviCvKcZD"
+            },
+            "created_time": "2011-08-27T11:44:32+0000",
+            "education": [
+                {
+                    "id": "1968441856594918",
+                    "school": {
+                        "id": "385678806736",
+                        "name": "Trường THPT Thái Phiên - Hải Phòng"
+                    },
+                    "type": "High School"
+                }
+            ],
+            "feed": [
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4510756005696811",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4510756005696811",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4510756005696811",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Add Friend"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-03-21T13:24:20+0000",
+                    "description": "[Xin gieo duyên hỗ trợ và tuyển TNV phát suất ăn cho người vô gia cư trong Sài Gòn ngày 23/3/2022]\n-CT Những người bạn chung sức thiện nguyện lần 11 của Nhóm Từ Thiện Nụ Cười Bác Ái vào ngày 23/3/2020 làm 200 phần cơm chay và sữa đậu nành cho bà con vô gia cư trong SG\n-Thời gian: 19g tập trung làm cơm vào đồ ăn và sữa,21g xuất phát đi phát.\n-Địa điểm tập trung 006 lô k chung cư bàu cát 2, đường hồng lạc, quận tân bình\n-Mọi chi tiết xin liên hệ 0903156655-0878119933 gặp Lộc,trưởng nhóm từ thiện Nụ Cười Bác Ái \n-Mọi đóng góp xin gửi về địa chỉ trên hoặc Số tk: 19033525716011,Ngân hàng Techcombank chi nhánh Trường Chinh,Chủ tài khoản: Nguyễn Hồng Lộc\nYêu thương trao đi là yêu thương còn mãi!!\n#NhómTừThiệnNụCườiBácÁi #charity #từthiện",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "full_picture": "https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/277118954_10225562011092693_7537949362908804755_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8024bb&_nc_ohc=4XeZ9W59mkgAX_d52lj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan4-1.fna&oh=00_AT8qQN-gVcj7ezr4sfztPUlEU7KIciRD2eghhWi6qxYCsg&oe=6240DFA4",
+                    "id": "100002873688469_4510756005696811",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/photo.php?fbid=10225562011132694&set=a.10200902890230083&type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "DũngMãnh Lộc",
+                    "object_id": "10225562011132694",
+                    "parent_id": "1099969635_10225562032733234",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4510756005696811",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4510756005696811",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-23T10:30:56+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4509696092469469",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4509696092469469",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4509696092469469",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Add Friend"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-03-21T02:49:34+0000",
+                    "description": "THÔNG BÁO TẠM NGỪNG KÊU GỌI CHO GIA ĐÌNH CÔ HỒNG VÀ CHÚ CHÓ Ạ, HIỆN TẠI TẠM ĐỦ KINH PHÍ ĐỂ GIA ĐÌNH XOAY SỞ THỜI GIAN SẮP TỚI\n\nXIN TRI ÂN TẤM LÒNG HẢO TÂM CỦA QUÝ MTQ RẤT NHIỀU Ạ ❤️❤️ \n(Nhóm xin phép xoá stk ạ) \n\nXIN GIÚP ĐỠ CHO GIA ĐÌNH KHỐN KHỔ BỮA ĂN QUA NGÀY VÀ CÓ KINH PHÍ CHỮA BỆNH CHO CON \n\nNgày 20/3/2022 TNV của nhóm Liên Tâm có ghé thăm gia đình có hoàn cảnh đặc biệt khó khăn😔😔 \n- Cô : Nguyễn thị Hồng . Sinh năm 1957\n- Chú : Nguyễn Văn Chó . Sinh năm 1963\n- Gia đình cô chú có ba người con\n- Đứa con lớn sinh năm 1986 tai nạn hơn 6 năm \nNão được nuôi ở bệnh viện Chợ Rẫy nhưng gia đình không đủ điều kiện để nuôi não nữa nên đã đưa anh về nhà trọ. Hiện giờ anh sống như người thực vật \nHiện tại căn nhà trọ chỉ vọn vẹn chưa đầy 16m 😭😭\n\n- Đứa con út năm 3 tuổi bị động kinh và trở nên tái biến bại liệt chân tay. Năm nay đã 29 tuổi\n\n☑️☑️Chú cũng bị tai biến và ko có sức khoẻ lao động chính cho gia đình nữa\n Cô thì mỗi ngày đi lượm ve chai phế liệu để kiếm tiền sống qua ngày chăm lo cho gia đình \nKhó khăn càng khó khăn, gánh nặng trên vai người mẹ già 😭\n\n- Kính mong các mạnh thường quân và anh chị em chung tay góp sức và giúp đỡ cho hoàn cảnh đặc biệt của cô Hồng \n\n- Mọi chi tiết xin liên hệ : 0968542922 Cô Hồng \nHoặc : 0785060707  gặp Vũ (TNV khảo sát thực tế)\n\n- Địa chỉ nhà cô Hồng:  Quốc lộ 13 (Ngay đại học Việt Đức . Phường Thới Hoà, thị xã Bến Cát, tỉnh Bình Dương\n\n💰Mọi đóng góp xin gửi về TK của nhóm Liên Tâm\n#VIETCOMBANK:  - CN. HCM\n#SACOMBANK:  - CN. Chợ Lớn\n- Chủ tài khoản: CAO HỮU HOÀNG VÂN\n☎️SĐT: 035 9055 337\n(lưu ý khi chuyển khoản quý nhà hảo tâm vui lòng ghi tên và nội dung giúp nhóm để nhóm tiện theo dõi danh sách ủng hộ cho chính xác nhé ạ) (vd: Tên facebook + NỘI DUNG ỦNG HỘ)\n\n- Xin chân thành cảm ơn bạn rất nhiều nhé💗\n- Nguyện hồi hướng công đức này đến khắp tất cả 💗\n\nLink page nhóm: https://m.facebook.com/ThienNguyenLienTam/",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "full_picture": "https://scontent.fsgn2-1.fna.fbcdn.net/v/t39.30808-6/276308725_1687136398304651_7057527968779859420_n.jpg?stp=dst-jpg_p180x540&_nc_cat=107&ccb=1-5&_nc_sid=110474&_nc_ohc=rem2tPgVujoAX9JQLvB&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn2-1.fna&oh=00_AT9Vn2kAayQ8QDkshpXO4DCRdC1Tw83b1ANWwMpMmKGhxg&oe=623F4C3D",
+                    "id": "100002873688469_4509696092469469",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/ThienNguyenLienTam/photos/a.516191222065847/1687133848304906/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Thiện Nguyện Liên Tâm",
+                    "object_id": "1687133848304906",
+                    "parent_id": "512406005777702_1687136001638024",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4509696092469469",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4509696092469469",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-21T10:04:46+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4507967542642324",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4507967542642324",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4507967542642324",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Add Friend"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-03-20T10:07:53+0000",
+                    "description": "😰😰😰\n\nCảnh sát lại triệt phá thêm kho mỹ phẩm (f)ake Kiehl's, Anessa, Estee Lauder... trị giá gần 50 tỉ, sợ nhất là nhìn y như thật mới chết dở! 👇",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "id": "100002873688469_4507967542642324",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/390567570966109/posts/5596745823681565/",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "Bán đồ auth có cả bill đầy đủ mà nhiều chị em vô chê đắt, r so sánh cá bên em với mấy bạn bán cá rẻ \"giật cả mình\" ấy ( nhiều khi săn s.a.l.e về tay cũng ko có rẻ vậy lun đó). Nghĩ nó buồn thật chứ🙂.\n \n❤️Kiếp con buôn chân chính bán với lương tâm nghề nghiệp, bán vì đam mê chứ lời lãi j tầm này🥲. \nMong anh/chị/em hãy là những người tiêu dùng sáng suốt, để tránh xiền mất tật mang, hãy ghé ngang qua Tâybeauty-Chuyên Mỹ Phẩm Auth nhé 😘",
+                    "message_tags": [
+                        {
+                            "id": "958765534293917",
+                            "length": 29,
+                            "name": "Tâybeauty-Chuyên Mỹ Phẩm Auth",
+                            "offset": 401,
+                            "type": "page"
+                        }
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Kenh14.vn",
+                    "parent_id": "390567570966109_5596745823681565",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4507967542642324",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4507967542642324",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "link",
+                    "updated_time": "2022-03-21T01:00:33+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4496834160422329",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4496834160422329",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4496834160422329",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Add Friend"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-03-16T01:59:55+0000",
+                    "description": "CẦN TNV PHỤ 2000 BÁNH MÌ BÌ CHAY để phát cho mái ấm,bà con vô gia cư,bệnh nhân các bệnh viên\n\nRằm này nhằm 17/3 CLB Từ Thiện Ăn Chay Trường chuẩn bị 2000 bánh mì bì phát cho người vô gia cư và lao động nghèo, cần:\n- 10 người phụ cô Trang chuẩn bị nguyên liệu từ chiều tối 16/3 15:00-22:00\n- Cần người phụ và phát không giới hạn từ 7:00 đến 20:00 ngày 17/3 ( sẽ phát xuyên suốt từ trưa, chiều tối và khuya)\nAnh chị em rảnh sắp xếp đến phụ CLB nhé ạ\nĐịa chỉ: 641 Điện Biên Phủ, Phường 1, Q3.\nMọi thắc mắc xin liên hệ 0903156655-0878119933 gặp Nguyễn Hồng Dũng Mãnh Lộc-Ôn Long Du Lãng",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "full_picture": "https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-6/274928504_10225535105140061_4877593610626703683_n.jpg?stp=dst-jpg_s720x720&_nc_cat=104&ccb=1-5&_nc_sid=8024bb&_nc_ohc=3kahRTOnLUgAX8ThjTG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT8vOX64FXw704nQzjehUtfJlUFuk_b6amgPT_0H8Bf5HA&oe=623F568E",
+                    "id": "100002873688469_4496834160422329",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/photo.php?fbid=10225535105260064&set=a.10200902890230083&type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "DũngMãnh Lộc",
+                    "object_id": "10225535105260064",
+                    "parent_id": "1099969635_10225535106900105",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4496834160422329",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4496834160422329",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-20T00:11:11+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4492629144176164",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4492629144176164",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4492629144176164",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Add Friend"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-03-14T11:49:47+0000",
+                    "description": "Xin hùn phước cùng nấu ăn cho các bé xóm ve chai q6\nT4 này 16.3.2022 này nhóm mình có nấu 300 suất ăn cho các bé, ai có gì góp đó(đồ ăn,trái cây,nhu yếu phẩm,sữa,mì...) cho các con\nMọi sự ủng hộ xin gửi về 772 Trường Chinh p15 q.Tân Bình , alo 0903156655-0878119933 gặp Nguyễn Hồng Dũng Mãnh Lộc\nSố tk: 19033525716011,Ngân hàng Techcombank chi nhánh Trường Chinh, 0878119933, Nam Á Bank ,chủ tk Nguyễn Hồng Lộc",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "full_picture": "https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/275845168_10225527054138791_1831266749248150817_n.jpg?stp=dst-jpg_p180x540&_nc_cat=102&ccb=1-5&_nc_sid=110474&_nc_ohc=CVeXoNq_MvAAX_b_oxN&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn2-5.fna&oh=00_AT8pJ6-biVsJA-_y84HumaX76omH_njNkWrov-IxhFhlYA&oe=623FCC8A",
+                    "id": "100002873688469_4492629144176164",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/photo.php?fbid=10225527050578702&set=a.10202244431647780&type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "DũngMãnh Lộc",
+                    "object_id": "10225527050578702",
+                    "parent_id": "1099969635_10225527053858784",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4492629144176164",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4492629144176164",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-14T11:49:47+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4492591240846621",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4492591240846621",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4492591240846621",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Add Friend"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-03-14T11:28:07+0000",
+                    "description": "\"Một miếng khi đói bằng một gói khi no\"\n\nXin quý mạnh Thường Quân ￼Và các nhà hảo tâm ￼cùng nhóm san sẻ những bữa ăn no với người vô gia cư mỗi tuần nhé ạ. \nHiện tại nhóm đang rất cần thêm kinh phí để có thể ￼duy trì hoạt động phát quà đêm hằng tuần cho bà con vô gia cư￼￼, trẻ em lang thang cơ nhỡ, người già tàn tật bán vé số..... ￼ trên khắp các con đường Sài Gòn về khuya\n\n￼💰Mọi đóng góp xin gửi về TK của nhóm Liên Tâm\n#VIETCOMBANK: 0071001090401 - CN. HCM\n#SACOMBANK: 060066698842 - CN. Chợ Lớn\n- Chủ tài khoản: CAO HỮU HOÀNG VÂN\n☎️SĐT: 035 9055 337\n(lưu ý khi chuyển khoản quý nhà hảo tâm vui lòng ghi tên và nội dung giúp nhóm để nhóm tiện theo dõi danh sách ủng hộ cho chính xác nhé ạ) (vd: Tên facebook + NỘI DUNG ỦNG HỘ)\n\n- Xin chân thành cảm ơn bạn rất nhiều nhé💗\n- Nguyện hồi hướng công đức này đến khắp tất cả 💗\n\nLink page nhóm: https://m.facebook.com/ThienNguyenLienTam/",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "full_picture": "https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/275916492_1682349628783328_6177668119537694974_n.jpg?stp=dst-jpg_s720x720&_nc_cat=111&ccb=1-5&_nc_sid=110474&_nc_ohc=-WkVEnRV2YcAX-P-ffw&_nc_ad=z-m&_nc_cid=1229&_nc_ht=scontent.fsgn5-15.fna&oh=00_AT_7yHZ_eRpi_tNzgjsEF7brEdgGcHkbgIwB7aZHn3vG1w&oe=6240C262",
+                    "id": "100002873688469_4492591240846621",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/ThienNguyenLienTam/photos/a.516191222065847/1682348075450150/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Thiện Nguyện Liên Tâm",
+                    "object_id": "1682348075450150",
+                    "parent_id": "512406005777702_1682349538783337",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4492591240846621",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4492591240846621",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-14T11:28:07+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4443955799043499",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4443955799043499",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4443955799043499",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Add Friend"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-02-24T05:48:17+0000",
+                    "description": "\"Người ta nói đẻ gì toàn con gái không nên người ta cũng không đốc thúc chồng làm phụ chị nuôi con. Sau khi ly dị, ảnh không phụ chị gì cả, chị mới thưa kiện 7 tháng nay thì mới được phụ cấp 750 ngàn một đứa.\n\nĐưa đôi tay quệt nước mắt, chị Trần Phước Diệu (39 tuổi) ngụ ấp Sóc, xã Huyền Hội, huyện Càng Long, tỉnh Trà Vinh cho biết suốt 10 năm qua, 4 mẹ con chị phải sống lay lắt nhờ tình thương của những người chòm xóm.\n\n\"Ảnh với chị không hợp nhau, ly hôn xong rồi chị mới biết có bầu bé Thịnh (9 tuổi), 4 mẹ con cứ sống ở chợ, nhờ các anh chị thương, có gì cho đó mà mới sống được đến hôm nay\", chị Diệu bật khóc.\n\nTheo lời kể của chị Diệu, vì sinh toàn con gái nên phía gia đình nội cũng không xem trọng, hơn nữa hoàn cảnh khó khăn, nghèo khó cũng là một phần dẫn đến sự tan vỡ của hai vợ chồng. Dù phía gia đình nội chỉ cách nơi 4 mẹ con sống vài km nhưng suốt gần 10 năm nay, cả 2 bên đều không qua lại, không một lời thăm hỏi, động viên…\n\nMỗi ngày chị bán vé số có lời bao nhiêu đâu, khổ lắm, nhiều lúc chị muốn bỏ xứ mà đi. Nhưng đi rồi mình bỏ 3 đứa con sao, ở đây có sổ hộ nghèo con mình còn được đi học. Dù cha nó không thương nhưng tụi nó vẫn còn mẹ, chị không bỏ được\", chị Diệu quệt nước mắt. Với thu nhập ít ỏi từ những tấm vé số, bữa cơm trưa của mấy mẹ con chị Diệu cũng chỉ là cơm trắng trộn nước tương. Sống trong cái khổ riết rồi thành quen, 3 đứa trẻ cứ thế lớn lên trong sự thiếu vắng tình thương, sự bao bọc của người cha. 3 chị em Hạnh Tuyền (15 tuổi), Hồng Lãm (13 tuổi) và Ngọc Thịnh (9 tuổi) chỉ biết trông chờ vào những tấm vé số của mẹ. Nhiều lúc nhìn thấy các bạn đồng trang lứa có cha mẹ đầy đủ, 3 chị em gái chỉ biết ôm nhau mà khóc.\n\n\"Từ nhỏ đến giờ con không gặp cha, phía nội cũng không tới thăm luôn. Hôm con gặp cha ở ngoài đường, cha chạy qua con chứ không gặp để nói chuyện. Con buồn, con giận cha vì cha tạo ra con mà không nuôi. Cha con giờ có cuộc sống mới, có vợ mới rồi…\", Hạnh Tuyền bật khóc. Đưa đôi tay quệt nước mắt, Tuyền thỏ thẻ: \"Sau này con muốn đi ra nước ngoài làm, tại con nghe người ta nói đi xuất khẩu lao động có nhiều tiền, con muốn kiếm tiền để nuôi lại mẹ\".\n\nCó lẽ trong tâm thức của Tuyền, sau chuỗi ngày cùng mẹ và các em chật vật cho cuộc sống mưu sinh, ước mơ của một đứa trẻ chỉ đơn giản là có một gia đình trọn vẹn hơn, không còn cảnh chạy vạy cho từng bữa ăn, thiếu trước hụt sau nữa. \n\nTrong căn nhà trống, chị Diệu ôm chầm lấy 3 đứa con gái nhỏ, bật khóc. Dù đã quen với cảnh chạy từng bữa cơm nhưng với tình cảnh hiện tại, tiền học tập, sách vở của tụi nhỏ, tiền ăn uống sau những ngày bán vé số ế ẩm vẫn còn là gánh nặng với chị Diệu.\n\nHi vọng thông qua bài viết này, quý đọc giả gần xa có thể quan tâm hỗ trợ để giúp đỡ cho 3 đứa trẻ không có cha bên cạnh có cơ hội tiếp tục được đến trường.\n❤Mọi sự đóng góp xin vui lòng liên hệ số điện thoại chị Diệu: 0357488549.\n\nLink nguồn: https://m.kenh14.vn/cha-bo-gia-dinh-noi-khong-thua-nhan-3-chi-em-gai-bat-khoc-cha-khong-nuoi-tui-con-ma-lai-di-cuoi-nguoi-khac-20220222151939502.chn?fbclid=IwAR1QUuEmz0rzo8pKxnJucHedFXmwJux7VMT3IuICFMHItY2CITNkDgCRXV8#utm_source=kenh14\n\nLƯU Ý: NHÓM CHỈ CHIA SẺ THÔNG TIN KHÔNG NHẬN ỦNG HỘ GIÁN TIẾP Ạ\n\nXin chân thành cảm ơn!",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "full_picture": "https://scontent.fsgn2-1.fna.fbcdn.net/v/t39.30808-6/274706331_1669467333404891_7713835291464835842_n.jpg?stp=dst-jpg_p720x720&_nc_cat=107&ccb=1-5&_nc_sid=110474&_nc_ohc=baLwr_YwthMAX-nYf5I&_nc_oc=AQn8vzP8ufigacSOKCQFpq9qwvzeyI5ObDLyRMmCApt1p69LEpBfHeY5A3BzSEJYxzs&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn2-1.fna&oh=00_AT9OVO0v-biOoGnrBX3Meny83d-KjMGiQY9_zD3PB_htZQ&oe=6240C8A4",
+                    "id": "100002873688469_4443955799043499",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/ThienNguyenLienTam/photos/a.516191222065847/1669467340071557/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Thiện Nguyện Liên Tâm",
+                    "object_id": "1669467340071557",
+                    "parent_id": "512406005777702_1669458880072403",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4443955799043499",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4443955799043499",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-03-06T05:28:51+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4435623003210112",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4435623003210112",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4435623003210112",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Add Friend"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-02-21T12:13:13+0000",
+                    "description": "Thần Thánh Thật Sự CE ạ🥰\n💦𝐊𝐞𝐦 𝐋𝐨́𝐭 𝐁𝐞𝐧𝐞𝐟𝐢𝐭 𝐓𝐡𝐞 𝐏𝐎𝐑𝐄 𝐟𝐞𝐬𝐬𝐢𝐨𝐧𝐚𝐥 PORE PRIMER 22ML😍\n\n👉Kem lót Thần Thánh Giải Quyết #Lỗ_Chân_Lông_To Và #Kiềm_Dầu_Lên_Tới_8H này :)) mùa nào cũng k thể thiếu ẻm đc.\n🌬 Nhanh chóng làm lỗ chân lông biến mất, tạo nên làn da “smoother-than-smooth skin” – mịn hơn cả mịn.\n🌬 Sản phẩm trong suốt, kiềm dầu rất tốt tới 8h, dùng cho tất cả các làn da, giúp giữ lớp trang điểm được lâu hơn.\n🌬 Ngoài ra Benefit The POREfessional chứa vitamin E bảo vệ làn da.\n🌼𝐁𝐄𝐍𝐄𝐅𝐈𝐓 𝐊𝐄𝐌 𝐋𝐎́𝐓 𝐍𝐆𝐎̣𝐂 𝐓𝐑𝐀𝐈 𝐂𝐇𝐄 𝐏𝐇𝐔̉ 𝐋𝐎̂̃ 𝐂𝐇𝐀̂𝐍 𝐋𝐎̂𝐍𝐆 𝐏𝐄𝐀𝐑𝐋 𝐏𝐑𝐈𝐌𝐄𝐑  🌼\n🌵Che nhỏ lỗ chân lông và làm mờ mụn ở mức tốt.\nKhả năng bắt sáng tốt.\n🌵Hiệu ứng makeup đẹp, lì - mịn - mượt, kiềm dầu khá nên mình nghĩ sẽ thích hợp cho những bạn da dầu và hỗn hợp thiên dầu.\n🌵Khi thoa lên da, kem để lại hiệu ứng lì, tiệp vào da, không bóng dầu, vì thế kem lót này giống như một lớp \"khiên\" vừa giúp bảo vệ da đồng thời hỗ trợ các sản phẩm trang điểm khác được apply lên bề mặt da tốt hơn và lớp nền trở nên lâu trôi lên đến 6 giờ đồng hồ.\n🌵Với công thức không chứa dầu và được bổ sung thêm tinh chất ngọc trai, làn da của bạn sẽ trở nên trắng hồng tức thì mà vẫn rất tự nhiên. Thông thường, kem lót có chiết xuất từ ngọc trai thường để lại lớp nền \"óng ánh\" và chỉ phù hợp với makeup ban đêm hoặc dự tiệc. Với #The #Porefessional #Pearl, bạn không cần lo ngại điều này bởi kem lót chỉ để lại làn da mịn, đẹp và không hề bí da, bạn có thể sử dụng hàng ngày và bất kể hoàn cảnh nào. Có thể nói, kem lót The Porefessional Pearl là bản dupe hoàn hảo của kem lót ngọc trai\n☑Kem lót Benefit The Porefessional Pearl Primer có 1 chút khác biệt so với “người anh em” Benefit The Porefessional Pore Primer của mình, đó là em ấy có màu hồng, nên sẽ có thêm khả năng cân chỉnh màu da cho những ai không may đang có làn da xanh xao, xỉn màu.\n🔆Pearl primer mang đến lớp nền căng , bóng mịn nhưng vẫn kiềm dầu tuyệt đối\nGiá chỉ 5xx/ full size 22ml.\n-----------------------\n🛒 Ship hàng toàn quốc\n📱 0904060540\n#makeup #beautytips #makeupbyme",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "full_picture": "https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/273954079_1846765588827236_7674111048319750063_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-5&_nc_sid=9e2e56&_nc_ohc=i5eL2FHkFaAAX8KpSRB&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fdad3-4.fna&oh=00_AT8Xz59dXnDgu6MXOOBw_iiSYHMxUlMwUpm90bMdcF6KTQ&oe=62400298",
+                    "id": "100002873688469_4435623003210112",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/taybeauty345/photos/a.1275696129267521/1846765605493901/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Tâybeauty-Chuyên Mỹ Phẩm Auth",
+                    "object_id": "1846765605493901",
+                    "parent_id": "958765534293917_1846765645493897",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4435623003210112",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4435623003210112",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-02-23T16:43:01+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4425822497523496",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4425822497523496",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4425822497523496",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Add Friend"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-02-18T06:08:21+0000",
+                    "description": "Dưỡng Da Mùa Nóng với Gel Dưỡng Ẩm Làm Mát Da Tức Thì  𝐈'𝐦 𝐅𝐫𝐨𝐦 𝐕𝐢𝐭𝐚𝐦𝐢𝐧 𝐓𝐫𝐞𝐞 𝐖𝐚𝐭𝐞𝐫 𝐆𝐞𝐥 🌤🌤\n\"𝗕𝗮̣𝗻 𝘁𝗵𝗮̂𝗻\" của nhiều Reviewer trong các group review, beauty với khả năng cấp ẩm nhẹ dịu 😍😍\n\n☘️ Chiết xuất từ Hắc Mai Biển có tác dụng hiệu cao đối với các làn da khô mất sức sống, làn da không đều màu và thâm sạm giúp cải thiện tổng thể cho làn da\n\n☘️ Chống oxy hóa mạnh mẽ cho da, điều tiết bã nhờn, làm dịu da và cấp ẩm sâu giúp làn da khô ẩm mịn và mềm mại hơn\n\n☘️ Gel không chứa chất tạo màu, tạo mùi, công thức nói không với silicon, mineral oil và dịu nhẹ đến mức có thể kết thân với làn da nhạy cảm\n\n☘️ Kết cấu dạng gel mỏng nhẹ, cảm thấy da được làm mát tức thì ngay sau khi vừa thoa kem lên da, thẩm thấu nhanh và không gây nhờn rít trên da\n-----------------------\n🛒 Ship hàng toàn quốc\n📱 0904060540\n#hangauth #vitamintreewatergel #imfromvitamintreewatergel #skincare #geldưỡngẩm #real",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "full_picture": "https://scontent.fsgn2-1.fna.fbcdn.net/v/t39.30808-6/274247932_1844270252410103_5561606219700834765_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-5&_nc_sid=9e2e56&_nc_ohc=wBs0E4tZS2sAX98-h74&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fsgn2-1.fna&oh=00_AT87qgeQhl2GlV3twHXCT_axfFmfGs4dDIgNnXz_oWMKLg&oe=623F2EFE",
+                    "id": "100002873688469_4425822497523496",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/taybeauty345/photos/a.1275696129267521/1844270269076768/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "Gel gì mà ta nói nó phê lắm áaaaaa",
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Tâybeauty-Chuyên Mỹ Phẩm Auth",
+                    "object_id": "1844270269076768",
+                    "parent_id": "958765534293917_1844270325743429",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4425822497523496",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Public",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4425822497523496",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-02-21T08:53:35+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                },
+                {
+                    "actions": [
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4423800324392380",
+                            "name": "Like"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4423800324392380",
+                            "name": "Comment"
+                        },
+                        {
+                            "link": "https://www.facebook.com/100002873688469/posts/4423800324392380",
+                            "name": "Share"
+                        },
+                        {
+                            "link": "https://www.facebook.com/ajax/add_friend/action/",
+                            "name": "Thêm bạn bè"
+                        }
+                    ],
+                    "app_installs_eligibility": true,
+                    "coordinates": {},
+                    "created_time": "2022-02-17T15:13:33+0000",
+                    "description": "❤❤MIẾNG DÁN TẨY TRẮNG RĂNG ORAL B 3D (14 GÓI) – ORAL B 3D WHITE WHITESTRIPS😍\n\n🦷 Miếng dán tẩy trắng răng Oral-B 3D White - một bước đột phá trong công nghệ tẩy trắng răng đã rất thành công ở thị trường Úc, có thể loại bỏ các chất bẩn tích tụ trong răng bạn chỉ trong vòng 2 tuần sử dụng. \n🦷 Được thiết kế theo miếng mỏng, linh hoạt, có gel làm trắng răng chứa hydrogen peroxide, được thiết kế để phù hợp với hình dạng răng của bạn, có tác dụng giữ lớp gel làm trắng răng này trên răng bạn.\n\n🤫 Ưu điểm:\n- Mang lại độ trắng sáng rõ rệt sau 2 tuần sử dụng\n\n- Cách sử dụng đơn giản và tiện lợi\n\n- Mang lại hiệu quả một cách chuyên nghiệp với chi phí ít tốn kém (so với làm trắng răng bằng đèn & lazer)\n\n- Sử dụng công nghệ tiên tiến Revolutionary Advanced Seal technology giúp răng trắng lâu\n\n- Mỗi miếng dán đều có bao bì riêng không sợ hư hỏng.\n\n- Không gây dị ứng đối với mọi loại cơ địa khác nhau\n\n🖍 Hướng dẫn sử dụng:\n- Vệ sinh răng miệng trước khi dán.\n\n- Dán miếng dán lên răng, gập phần còn thừa cho đằng sau răng (miếng dài cho hàm trên và miếng ngắn cho hàm dưới)\n\n- Để trong 1 tiếng, có thể nói chuyện thoải mái\n\n- Bóc miếng dán ra, rồi đánh răng lại thật sạch\n\nLưu ý: Kiên trì sử dụng miếng dán trắng răng Oral-B 3D White trong 14 ngày để mang lại hiệu quả tốt nhất.\n-----------------------\n🛒 Ship hàng toàn quốc\n📱 0904060540\n#OralB #OralB3Dwhite #auth #hangxachtaychinhhang #miếngdántrắngrăng #trắngrăng",
+                    "from": {
+                        "id": "100002873688469",
+                        "name": "Nguyễn Mai Phương"
+                    },
+                    "full_picture": "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/273832274_1843816102455518_9127936047657313337_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=9e2e56&_nc_ohc=3WbYGL-SBzwAX-TCzP_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan5-6.fna&oh=00_AT-p-NeZfAxDmZVJzrojeex9ZiUEApNecBC8CNbOPrR29w&oe=624031E1",
+                    "id": "100002873688469_4423800324392380",
+                    "instagram_eligibility": "ineligible_unknown_error",
+                    "is_app_share": false,
+                    "is_eligible_for_promotion": false,
+                    "is_expired": false,
+                    "is_hidden": false,
+                    "is_instagram_eligible": false,
+                    "is_published": true,
+                    "is_spherical": false,
+                    "link": "https://www.facebook.com/taybeauty345/photos/a.1275696129267521/1843816129122182/?type=3",
+                    "live_video_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "message": "Nụ cười toả nắng, \nTrắng sáng rực rỡ, \ncrush nào lỡ \nko yêu được chớ 😘\n\nP/s: còn nếu lỡ crush ko yêu đích thị là crush bị mù ròi nhaaaa😃\n#tây_yuna",
+                    "message_tags": [
+                        {
+                            "id": "2621603797918655",
+                            "length": 9,
+                            "name": "#Tây_yuna",
+                            "offset": 137
+                        }
+                    ],
+                    "multi_share_end_card": false,
+                    "multi_share_optimized": false,
+                    "name": "Tâybeauty-Chuyên Mỹ Phẩm Auth",
+                    "object_id": "1843816129122182",
+                    "parent_id": "958765534293917_1843816225788839",
+                    "permalink_url": "https://www.facebook.com/100002873688469/posts/4423800324392380",
+                    "privacy": {
+                        "allow": "",
+                        "deny": "",
+                        "description": "Công khai",
+                        "friends": "",
+                        "value": "EVERYONE"
+                    },
+                    "promotable_id": "100002873688469_4423800324392380",
+                    "promotion_status": "ineligible",
+                    "status_type": "mobile_status_update",
+                    "subscribed": false,
+                    "timeline_visibility": "normal",
+                    "type": "photo",
+                    "updated_time": "2022-02-18T04:36:04+0000",
+                    "video_buying_eligibility": [
+                        "INELIGIBLE_NO_VIDEO"
+                    ],
+                    "will_be_autocropped_when_deliver_to_instagram": false
+                }
+            ],
+            "first_name": "Phương",
+            "gender": "female",
+            "hometown": {
+                "id": "114668461883395",
+                "name": "Hai Phong, Vietnam"
+            },
+            "id": "100002873688469",
+            "install_type": "UNKNOWN",
+            "installed": false,
+            "interested_in": [
+                "male"
+            ],
+            "is_famedeeplinkinguser": false,
+            "is_guest_user": false,
+            "is_verified": false,
+            "languages": [
+                {
+                    "id": "106059522759137",
+                    "name": "English language"
+                }
+            ],
+            "last_name": "Nguyễn",
+            "link": "https://www.facebook.com/phuong.tay.77",
+            "location": {
+                "id": "108458769184495",
+                "name": "Ho Chi Minh City, Vietnam"
+            },
+            "loom_config_v2": "{\"KILLSWITCH_ENABLED\":true}",
+            "messenger_join_notifications_enabled": false,
+            "middle_name": "Mai",
+            "mobile_phone_with_source": [
+                {
+                    "key": "mobile_phone"
+                },
+                {
+                    "key": "source_added"
+                },
+                {
+                    "key": "source_verified"
+                }
+            ],
+            "name": "Nguyễn Mai Phương",
+            "name_format": "{first} {last}",
+            "quotes": "Xấu tự nhiên hiển nhiên không cần chỉnh sửa",
+            "relationship_status": "Single",
+            "short_name": "Phương",
+            "subscribe_status": "CAN_SUBSCRIBE",
+            "supports_donate_button_in_live_video": false,
+            "test_group": 9,
+            "user_storage_key": "3a007d3a7d84c617b08ddc1457b92948dd0fa348688fc370f5c58e113a205961",
+            "username": "phuong.tay.77",
+            "viewer_can_send_gift": false,
+            "work": [
+                {
+                    "employer": {
+                        "id": "115839536491812",
+                        "name": "Déesse"
+                    },
+                    "end_date": "0000-00",
+                    "id": "2137914902980945",
+                    "position": {
+                        "id": "795861660500480",
+                        "name": "Boss"
+                    },
+                    "start_date": "2019-10-12"
+                },
+                {
+                    "employer": {
+                        "id": "958765534293917",
+                        "name": "Tâybeauty-Chuyên Mỹ Phẩm Auth"
+                    },
+                    "end_date": "0000-00",
+                    "id": "2137925636313205",
+                    "position": {
+                        "id": "795861660500480",
+                        "name": "Boss"
+                    },
+                    "start_date": "2018-10-11"
+                },
+                {
+                    "employer": {
+                        "id": "108458769184495",
+                        "name": "Ho Chi Minh City, Vietnam"
+                    },
+                    "end_date": "0000-00",
+                    "id": "1354460151326428",
+                    "position": {
+                        "id": "114203335262872",
+                        "name": "MakeUp Artist"
+                    },
+                    "start_date": "2017-08-31"
+                },
+                {
+                    "employer": {
+                        "id": "366586750202841",
+                        "name": "Idol Cctalk tại VNG Corporation"
+                    },
+                    "id": "859346557504459",
+                    "location": {
+                        "id": "108458769184495",
+                        "name": "Ho Chi Minh City, Vietnam"
+                    },
+                    "start_date": "0000-00"
+                },
+                {
+                    "employer": {
+                        "id": "287250191399680",
+                        "name": "Talktv"
+                    },
+                    "id": "557169004388884",
+                    "position": {
+                        "id": "217455815663916",
+                        "name": "idol cctalk"
+                    },
+                    "start_date": "0000-00"
+                },
+                {
+                    "employer": {
+                        "id": "110395088983224",
+                        "name": "Freelance model"
+                    },
+                    "id": "452524981519954",
+                    "position": {
+                        "id": "1817975751839874",
+                        "name": "Photo model/Actress"
+                    },
+                    "start_date": "0000-00"
+                }
+            ]
+        }
+    ]
+}

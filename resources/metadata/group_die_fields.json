@@ -1,0 +1,1 @@
+{"__type__": {"type": "nodetype", "description": "Type", "version": "v11.0"}, "membership_state": {"type": "enum", "description": "The membership state of the current User", "version": "v11.0"}}
