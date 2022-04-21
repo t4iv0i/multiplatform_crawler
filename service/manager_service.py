@@ -1,27 +1,30 @@
 from service.worker_service import Worker
-from service.daemon_service import Daemon
-from threading import RLock
+from threading import Thread, RLock, Event
 from module import helper
-import random
+from time import sleep
 
 
-class Manager:
-    def __init__(self, rabbitmq_pool):
+class Manager(Thread):
+    def __init__(self, rabbitmq_pool, proxy_pool, credential_pool):
+        super().__init__()
         self.index = 0
         self.rabbitmq_pool = rabbitmq_pool
-        self.worker_pool = dict(facebook=dict(), instagram=dict(), youtube=dict(), tiktok=dict())
+        self.proxy_pool = proxy_pool
+        self.credential_pool = credential_pool
+        self.worker_pool = dict()
         self.lock = RLock()
+        self.stop_event = Event()
 
-    def add_new_worker(self, typ3):
-        name = helper.generate_name(prefix=f"{typ3}_worker", exist_name=self.worker_pool[typ3].keys())
+    def add_new_worker(self):
+        name = helper.generate_name(prefix=f"worker", exist_name=self.worker_pool.keys())
         self.index += 1
-        worker = Worker(name=name, typ3=typ3, rabbitmq_pool=self.rabbitmq_pool)
+        worker = Worker(name=name, rabbitmq_pool=self.rabbitmq_pool)
         worker.start()
         self.lock.acquire()
-        self.worker_pool[typ3][name] = worker
+        self.worker_pool[name] = worker
         self.lock.release()
 
-    def get_inactive_worker(self, typ3):
+    def get_active_worker(self, typ3):
         for name, worker in self.worker_pool[typ3].items():
             if not worker.is_alive():
                 return worker
@@ -29,16 +32,23 @@ class Manager:
             return None
 
     def reset_worker(self, worker):
-        typ3 = worker.type
         name = worker.name
         self.lock.acquire()
-        worker = self.worker_pool[typ3].pop(name)
+        worker = self.worker_pool.pop(name)
         self.lock.release()
         worker.stop()
         del worker
-        self.add_new_worker(typ3)
+        self.add_new_worker()
 
-    def add_new_daemon(self):
-        self.index += 1
-        daemon = Daemon(rabbitmq_pool=self.rabbitmq_pool)
-        daemon.start()
+    def stop(self):
+        self.stop_event.set()
+
+    def run(self):
+        print(f"Manager is started...")
+        while True:
+            if self.stop_event.is_set():
+                print("Manager is stopped!!!")
+                break
+            sleep(3600)
+            self.proxy_pool.save()
+            self.credential_pool.save()

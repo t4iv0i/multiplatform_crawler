@@ -1,6 +1,5 @@
 from constant import constant
-from module import facebook, instagram, mongo, helper
-# tiktok,  youtube
+from module import facebook, instagram, tiktok,  youtube, mongo, helper
 from models import Model
 from service import mongo_service
 
@@ -10,64 +9,58 @@ def get_facebook_info(params):
     if command == "create":
         url = params["url"]
         node_info, error = facebook.get_facebook_identity(url)
-        print(node_info)
         if error is not None:
-            yield None, error
-            return
+            return None, error
         database, collection, node_id = "facebook", node_info.pop('collection'), node_info['id']
         params.update({"collection": collection})
         model = Model.get(database=database, collection=collection)
-        fields = params.get("fields")
+        fields = params.get("fields", [])
         if not fields:
+            field_info = model.fields
             fields = list(model.fields.keys())
+        else:
+            for field in ["id", "about"]:
+                if field not in fields:
+                   fields.append(field)
+            field_info = dict()
+            for field in fields:
+                field_info[field] = model.fields[field]
         params["fields"] = fields
-        node_data, error = facebook.get_node_info(uid=node_id, field_info=model.fields, fields=fields)
+        node_data, error = facebook.get_node_info(uid=node_id, field_info=field_info)
         if error is not None:
             yield None, error
             return
         node_data.update(node_info)
-        if node_data.get("about") and node_data.get("followers_count"):
-            hashtag = helper.normalize_hashtag(params["hashtag"])
-            if hashtag.lower() in node_data["about"].lower() and node_data["followers_count"] >= constant.REQUIRED_FOLLOWER:
+        hashtag = helper.normalize_hashtag(params["hashtag"])
+        if node_data.get("about") and hashtag.upper() in node_data["about"].upper():
+            if node_data.get("followers_count") and node_data["followers_count"] >= constant.REQUIRED_FOLLOWER:
                 node_data["is_verified"] = True
         else:
             node_data["is_verified"] = False
-        yield node_data, None
-        username, uuid = params["username"], params["uuid"]
-        for connection_params in params.pop("connections", []):
-            connection_params.update({"username": username, "uuid": uuid})
-            connection_name = connection_params["connection_name"]
-            version = model.connections[connection_name]["version"]
-            condition = connection_params.get("condition")
-            generator = facebook.get_connection_id(uid=node_id, connection=connection_name, version=version, condition=condition)
-            limit, condition = next(generator)
-            yield limit, condition
-            path, index = f"{connection_name}", 0
-            for record in generator:
-                _collection, error = facebook.get_facebook_collection(uid=record['id'])
-                if error is not None:
-                    print(error)
-                    return
-                _id, index = record["id"], index + 1
-                connection_data = {"id": node_id, connection_name: {"database": database, "collection": _collection, "id": _id}}
-                connection_params.update({"collection": _collection, "path": path + f"[{index}]"})
-                yield connection_data, connection_params
-        return
+        return node_data, None
     elif command == "update":
         database = params["database"]
         collection = params["collection"]
+        model = Model.get(database=database, collection=collection)
         filters = params.get("filters")
-        fields = params.get("fields").copy()
-        for connection_params in params.get("connections", []):
-            fields.append(connection_params["connection_name"])
+        fields = params.get("fields")
+        if not fields:
+            field_info = model.fields
+            fields = list(model.fields.keys())
+        else:
+            if "id" not in fields:
+                fields.append("id")
+            field_info = dict()
+            for field in fields:
+                field_info[field] = model.fields[field]
+        params["fields"] = fields
         result, error = mongo.client_read(database=database, collection=collection, filters=filters, fields=fields)
         if error is not None:
             message = f"Cant get user index. Detail: {error['message']}"
             return None, {"message": message, "status_code": 400}
-        model = Model.get(database=database, collection=collection)
         for index in range(len(result)):
             record = model(result[index]).to_str()
-            node_data, error = facebook.get_info(uid=record["id"], requirement=params)
+            node_data, error = facebook.get_node_info(uid=record["id"], field_info=field_info)
             if error is not None:
                 return None, error
             print(node_data)
@@ -78,62 +71,181 @@ def get_facebook_info(params):
 def get_instagram_info(params):
     command = params["command"]
     if command == "create":
-        url = params["url"]
-        info = instagram.get_info_api(url=url)
-        info.update({"type": "instagram", "is_verified": False})
+        url, database, collection = params["url"], "instagram", "User"
+        username = helper.instagram_get_username_from_url(url)
+        if username is None:
+            message = f"Can't get username of {url}"
+            return None, {"message": message, "status_code": 400}
+        model = Model.get(database=database, collection=collection)
+        fields = params.get("fields", [])
+        if not fields:
+            field_info = model.fields
+            fields = list(model.fields.keys())
+        else:
+            for field in ["id", "description"]:
+                if field not in fields:
+                    fields.append(field)
+            field_info = dict()
+            for field in fields:
+                field_info[field] = model.fields[field]
+        params["fields"] = fields
+        node_data, error = instagram.get_info(username=username, field_info=field_info)
+        if error is not None:
+            return None, error
+        node_data.update({"type": "instagram", "is_verified": False})
         hashtag_upper = helper.normalize_hashtag(params["hashtag"])
-        info["hashtag"] = False
-        if info.get('description'):
-            if hashtag_upper in info['description'].upper():
-                info['hashtag'] = True
-        if info["hashtag"] and info["follower"] >= constant.REQUIRED_FOLLOWER:
-            info["is_verified"] = True
-        return info, None
+        if node_data.get('description') and hashtag_upper in node_data['description'].upper():
+            if node_data["follower"] >= constant.REQUIRED_FOLLOWER:
+                node_data["is_verified"] = True
+        return node_data, None
     elif command == "update":
-        return None, None
+        database = params["database"]
+        collection = params["collection"]
+        model = Model.get(database=database, collection=collection)
+        filters = params.get("filters")
+        fields = params.get("fields", [])
+        if not fields:
+            field_info = model.fields
+            fields = field_info.keys()
+        else:
+            for field in ["id", "username"]:
+                if field not in fields:
+                    fields.append(field)
+            field_info = dict()
+            for field in fields:
+                field_info[field] = model.fields[field]
+        params["fields"] = fields
+        result, error = mongo.client_read(database=database, collection=collection, filters=filters, fields=fields)
+        if error is not None:
+            message = f"Cant get user index. Detail: {error['message']}"
+            return None, {"message": message, "status_code": 400}
+        for index in range(len(result)):
+            record = model(result[index]).to_str()
+            node_data, error = instagram.get_info(username=record["username"], field_info=field_info)
+            if error is not None:
+                return None, error
+            print(node_data)
+            result[index] = helper.recursive_update(source=node_data, dest=record)
+        return result, None
 
-#
-# def get_tiktok_info(url, hashtag, from_datetime, to_datetime):
-#     info = tiktok.get_info(url=url, hashtag=hashtag,
-#                            from_datetime=from_datetime, to_datetime=to_datetime)
-#     if type(info) == str:
-#         timestamp = datetime.now().strftime("%Y-%m-%dT%H-%M-%S")
-#         crawler.browser.save_screenshot(f"error/{info}_{timestamp}.png")
-#         return dict(url=url, type="tiktok", is_verified=False), {"message": info}
-#     info.update({"type": "tiktok", "is_verified": False})
-#     normalized_info = helper.normalize_info(info, "tiktok")
-#     check = 0
-#     for field in constant.RESPONSE_MUST_HAVE_FIELDS:
-#         if normalized_info.get(field) is not None:
-#             check += 1
-#     if check == len(constant.RESPONSE_MUST_HAVE_FIELDS):
-#         if normalized_info["hashtag"] and normalized_info["follower"] >= constant.REQUIRED_FOLLOWER:
-#             normalized_info["is_verified"] = True
-#         return normalized_info, None
-#     else:
-#         return normalized_info, {"message": "Lack of information"}
-#
-#
+
+def get_youtube_info(params):
+    command = params["command"]
+    if command == "create":
+        url = params["url"]
+        channel_id, error = youtube.get_channel_id(url)
+        if error is not None:
+            return None, error
+        database, collection = "youtube", "User"
+        model = Model.get(database=database, collection=collection)
+        fields = params.get("fields", [])
+        if not fields:
+            field_info = model.fields
+            fields = list(model.fields.keys())
+        else:
+            for field in ["id", "description"]:
+                if field not in fields:
+                    fields.append(field)
+            field_info = dict()
+            for field in fields:
+                field_info[field] = model.fields[field]
+        params["fields"] = fields
+        node_data, error = youtube.get_info(url=url, field_info=field_info)
+        if error is not None:
+            return None, error
+        node_data["is_verified"] = False
+        hashtag_upper = helper.normalize_hashtag(params["hashtag"])
+        if node_data.get('description') and hashtag_upper in node_data['description'].upper():
+            if node_data["follower"] >= constant.REQUIRED_FOLLOWER:
+                node_data["is_verified"] = True
+        return node_data, None
+    elif command == "update":
+        database = params["database"]
+        collection = params["collection"]
+        filters = params.get("filters")
+        model = Model.get(database=database, collection=collection)
+        fields = params.get("fields", [])
+        if not fields:
+            field_info = model.fields
+            fields = list(model.fields.keys())
+        else:
+            for field in ["id", "url"]:
+                if field not in fields:
+                    fields.append(field)
+            field_info = dict()
+            for field in fields:
+                field_info[field] = model.fields[field]
+        params["fields"] = fields
+        result, error = mongo.client_read(database=database, collection=collection, filters=filters, fields=fields)
+        if error is not None:
+            message = f"Cant get user index. Detail: {error['message']}"
+            return None, {"message": message, "status_code": 400}
+        for index in range(len(result)):
+            record = model(result[index]).to_str()
+            node_data, error = youtube.get_info(url=record["url"], field_info=field_info)
+            if error is not None:
+                return None, error
+            print(node_data)
+            result[index] = helper.recursive_update(source=node_data, dest=record)
+        return result, None
 
 
-#
-#
-# def get_youtube_info(crawler, url, hashtag, from_datetime, to_datetime):
-#     info = youtube.get_info(url=url, hashtag=hashtag,
-#                             from_datetime=from_datetime, to_datetime=to_datetime)
-#     if type(info) == str:
-#         timestamp = datetime.now().strftime("%Y-%m-%dT%H-%M-%S")
-#         crawler.browser.save_screenshot(f"error/{info}_{timestamp}.png")
-#         return dict(url=url, type="youtube", is_verified=False), {"message": info}
-#     info.update({"type": "youtube", "is_verified": False})
-#     normalized_info = helper.normalize_info(info, "youtube")
-#     check = 0
-#     for field in constant.RESPONSE_MUST_HAVE_FIELDS:
-#         if normalized_info.get(field) is not None:
-#             check += 1
-#     if check == len(constant.RESPONSE_MUST_HAVE_FIELDS):
-#         if normalized_info["hashtag"] and normalized_info["follower"] >= constant.REQUIRED_FOLLOWER:
-#             normalized_info["is_verified"] = True
-#         return normalized_info, None
-#     else:
-#         return normalized_info, {"message": "Lack of information"}
+def get_tiktok_info(params):
+    command = params["command"]
+    if command == "create":
+        url = params["url"]
+        user_id, error = tiktok.get_user_id(url)
+        if error is not None:
+            return None, error
+        database, collection = "tiktok", "User"
+        model = Model.get(database=database, collection=collection)
+        fields = params.get("fields", [])
+        if not fields:
+            field_info = model.fields
+            fields = list(model.fields.keys())
+        else:
+            for field in ["id", "description"]:
+                if field not in fields:
+                    fields.append(field)
+            field_info = dict()
+            for field in fields:
+                field_info[field] = model.fields[field]
+        params["fields"] = fields
+        node_data, error = tiktok.get_info(url=url, field_info=field_info)
+        if error is not None:
+            return None, error
+        node_data.update({"id": user_id, "url": url, "is_verified": False})
+        hashtag_upper = helper.normalize_hashtag(params["hashtag"])
+        if node_data.get('description') and hashtag_upper in node_data['description'].upper():
+            if node_data["follower"] >= constant.REQUIRED_FOLLOWER:
+                node_data["is_verified"] = True
+        return node_data, None
+    elif command == "update":
+        database = params["database"]
+        collection = params["collection"]
+        model = Model.get(database=database, collection=collection)
+        filters = params.get("filters")
+        fields = params.get("fields", [])
+        if not fields:
+            field_info = model.fields
+            fields = list(model.fields.keys())
+        else:
+            for field in ["id", "url"]:
+                if field not in fields:
+                    fields.append(field)
+            field_info = dict()
+            for field in fields:
+                field_info[field] = model.fields[field]
+        params["fields"] = fields
+        result, error = mongo.client_read(database=database, collection=collection, filters=filters, fields=fields)
+        if error is not None:
+            message = f"Cant get user index. Detail: {error['message']}"
+            return None, {"message": message, "status_code": 400}
+        for index in range(len(result)):
+            record = model(result[index]).to_str()
+            node_data, error = tiktok.get_info(url=record["url"], field_info=field_info)
+            if error is not None:
+                return None, error
+            print(node_data)
+            result[index] = helper.recursive_update(source=node_data, dest=record)
+        return result, None

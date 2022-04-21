@@ -42,7 +42,7 @@ class RabbitPool:
         self.lock.release()
         return signal
 
-    def get_inactive_connection(self):
+    def get_active_connection(self):
         self.lock.acquire()
         if len(self.inactive_connections) == 0:
             self.lock.release()
@@ -66,10 +66,10 @@ class RabbitPool:
         print(f"RabbitMQ reset connection {connection_name}")
 
     def consumer(self, queue_name):
-        connection_name, connection = self.get_inactive_connection()
+        connection_name, connection = self.get_active_connection()
         while connection is None:
             self.init_connection()
-            connection_name, connection = self.get_inactive_connection()
+            connection_name, connection = self.get_active_connection()
         yield connection_name
         channel = connection.channel()
         consume = channel.consume(queue=queue_name, auto_ack=True)
@@ -85,7 +85,7 @@ class RabbitPool:
             except Exception as e:
                 channel.cancel()
                 self.reset_connection(connection_name)
-                connection_name, connection = self.get_inactive_connection()
+                connection_name, connection = self.get_active_connection()
                 channel = connection.channel()
                 consume = channel.consume(queue=queue_name, auto_ack=True)
                 yield None, f"Error occurs when get message from queue: {str(e)}"
@@ -93,10 +93,10 @@ class RabbitPool:
                 yield message, None
 
     def publish(self, message, queue_name):
-        connection_name, connection = self.get_inactive_connection()
+        connection_name, connection = self.get_active_connection()
         while connection is None:
             self.init_connection()
-            connection_name, connection = self.get_inactive_connection()
+            connection_name, connection = self.get_active_connection()
         error = None
         for count in range(3):
             with connection.channel() as channel:

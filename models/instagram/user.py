@@ -10,13 +10,13 @@ class User(Template):
         "id": None
     }
     fields = {
-        "id": {"type": "string"},
-        "name": {"type": "string"},
-        "username": {"type": "string"},
-        "post": {"type": "int"},
-        "follower": {"type": "int"},
-        "following": {"type": "int"},
-        "description": {"type": "string"}
+        "id": {"type": "string", "indicators": ["id"]},
+        "name": {"type": "string", "indicators": ["full_name"]},
+        "username": {"type": "string", "indicators": ["graphql", "user", "username"]},
+        "post_count": {"type": "int", "indicators": ["edge_owner_to_timeline_media", "count"]},
+        "follower_count": {"type": "int", "indicators": ["edge_followed_by", "count"]},
+        "following_count": {"type": "int", "indicators": ["edge_follow", "count"]},
+        "description": {"type": "string", "indicators": ["biography"]}
     }
     connections = {
 

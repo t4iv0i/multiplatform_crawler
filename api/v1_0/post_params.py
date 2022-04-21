@@ -31,6 +31,6 @@ def post_params():
         error = validation.validate_permission(params=normalized_params)
         if error is not None:
             return make_response(jsonify(result=result, error=error["message"]), error["status_code"])
-        rabbitmq_pool.publish(queue_name=normalized_params["database"], message=normalized_params)
+        rabbitmq_pool.publish(queue_name="worker", message=normalized_params)
         result.append(uuid)
     return make_response(jsonify(dict(result=result)), 200)

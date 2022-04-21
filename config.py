@@ -1,4 +1,4 @@
-API_PREFIX = '/api/v1_0'
+API_PREFIX = '/api/v2_3'
 
 # -------------------------------------
 # MongoDB
@@ -19,7 +19,10 @@ RABBITMQ_USERNAME = 'testiny'
 RABBITMQ_PASSWORD = '0139'
 RABBITMQ_MAX_CHANNEL = 16
 EXCHANGE_NAME = ''
-QUEUE_NAMES = ['facebook', 'instagram', 'tiktok', 'youtube', 'daemon']
+QUEUE_NAMES = ['worker']
 
+# -------------------------------------
+# JWT
+# -------------------------------------
 ACCESS_TOKEN_EXPRISE = 60
 JWT_SECRET_KEY = "accesstrade"

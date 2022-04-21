@@ -1,4 +1,6 @@
+import json
 from constant import constant
+from os import path
 from random import choice
 from requests import Session
 from module import helper
@@ -7,9 +9,7 @@ from threading import Lock
 
 class ProxyPool:
     def __init__(self):
-        self.available = list()
-        self.active = list()
-        self.dead = list()
+        self.proxies = dict(map(lambda typ3: (typ3, []), constant.type_of_proxy))
         self.lock = Lock()
         self.default_ip = self.get_default_ip()
         self.scan()
@@ -24,8 +24,8 @@ class ProxyPool:
 
     def check_alive(self, proxy):
         session = Session()
-        proxy_string = f"https://{proxy['username']}:{proxy['password']}@{proxy['ip']}:{proxy['port']}"
-        session.proxies = {'http': proxy_string, 'https': proxy_string}
+        proxy_string = f"https://{proxy['username']}:{proxy['password']}@{proxy['hostname']}:{proxy['port']}"
+        session.proxies = {'http': proxy_string}
         try:
             response = session.get(constant.check_ipv4_address)
             ip = response.text
@@ -42,33 +42,50 @@ class ProxyPool:
 
     def get(self):
         self.lock.acquire()
-        while len(self.available):
-            index = choice(range(len(self.available)))
-            proxy = self.available.pop(index)
+        while len(self.proxies["available"]):
+            index = choice(range(len(self.proxies["available"])))
+            proxy = self.proxies["available"].pop(index)
             if self.check_alive(proxy):
-                self.active.append(proxy)
+                self.proxies["active"].append(proxy)
                 self.lock.release()
                 return proxy
             else:
-                self.dead[proxy] = True
+                self.proxies["dead"].append(proxy)
         self.lock.release()
         self.scan()
         return None
 
     def report(self, proxy):
-        for index in range(len(self.active)):
-            if self.active[index] == proxy:
-                self.dead.append(self.active.pop(index))
+        is_alive = self.check_alive(proxy)
+        self.lock.acquire()
+        active = self.proxies["active"]
+        for index in range(len(active)):
+            if proxy == active[index]:
+                self.proxies["active"].pop(index)
+                if is_alive:
+                    self.proxies["available"].append(proxy)
+                else:
+                    self.proxies["dead"].append(proxy)
                 break
+        self.lock.release()
 
     def scan(self):
-        root_dir = "resources/proxy"
-        pattern = r'http://([^\:]+)\:([^\:]+)\@([\.\w]+)\:(\d+)'
-        proxies = [zip(["username", "password", "ip", "port"], proxy) for proxy in helper.scan(root_dir=root_dir, pattern=pattern)]
+        root_dir = path.join("resources", "proxy")
+        proxies = helper.scan(root_dir=root_dir, json_type=True)
         self.lock.acquire()
-        for proxy in self.dead:
-            if self.check_alive(proxy):
-                proxies.append(proxy)
-                self.dead.pop(proxy)
-        self.available = dict([(proxy, True) for proxy in proxies])
+        for proxy in proxies:
+            for typ3 in constant.type_of_proxy:
+                if proxy in self.proxies[typ3]:
+                    break
+            else:
+                self.proxies["available"].append(proxy)
+                print(f"Added proxy: {proxy}")
         self.lock.release()
+
+    def save(self):
+        for typ3 in constant.type_of_proxy:
+            file_path = path.join("resources", "proxy", "backup", f"{typ3.json}")
+            with open(file_path, 'wt') as fp:
+                json.dump(self.proxies[typ3], fp)
+            print(f"Saved {len(self.proxies[typ3])} {typ3} proxies")
+

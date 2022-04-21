@@ -1,49 +1,41 @@
-from app import browser_pool
-from selenium.webdriver.common.by import By
-from constant import constant
-from module import helper
+from app import api_pool, browser_pool
+from bs4 import BeautifulSoup
 import re
 
 
-def get_info(url, hashtag):
-    crawler = browser_pool.get_inactive_browser(typ3="tiktok")
-    info = dict(url=url)
+def get_user_id(url):
+    html, error = api_pool.request(url=url, typ3="tiktok", method="GET")
+    if error is not None:
+        return None, error
+    soup = BeautifulSoup(html, 'html.parser')
+    script = soup.select_one('script[id="sigi-persisted-data"]')
+    regex = re.findall(r'\"authorId\":\"(\d+)\"', script.text)
+    if regex:
+        return regex[0], None
+    else:
+        return None, {"message": f"Can't get id of {url}", "status_code": 400}
+
+
+def get_info(url, field_info):
+    info = dict()
+    crawler = browser_pool.get_active(typ3="normal")
     try:
         crawler.browser.get(url)
-        crawler.wait_presence_of_element_located("/html/body")
-        body = crawler.browser.find_element(By.XPATH, "html/body")
-        crawler.wait_visibility_of(body)
-        text = body.text.lower()
-    except:
-        return "Cant load page"
-    if "Your connection was interrupted" in text or "No internet" in text:
-        return "Lost connection"
-    for field in constant.tiktok_info_xpath:
-        xpath = constant.tiktok_info_xpath[field]
+    except Exception as e:
+        browser_pool.reset(browser=crawler, reason="tiktok")
+        return None, {"message": f"Can't load page.\nDetail: {str(e)}", "status_code": 400}
+    for field in field_info:
+        xpath = field_info[field].get("xpath")
+        if xpath is None:
+            continue
         try:
             crawler.wait_presence_of_element_located(xpath)
-            element = crawler.browser.find_element(By.XPATH, constant.tiktok_info_xpath[field])
+            element = crawler.browser.find_element_by_xpath(xpath)
             crawler.wait_visibility_of(element)
-        except:
-            pass
+        except Exception as e:
+            browser_pool.set_active(crawler)
+            return None, {"message": f"Can't get {field} info.\nDetail: {str(e)}", "status_code": 400}
         else:
-            if field == 'share_link':
-                info[field] = element.get_attribute('href')
-            else:
-                info[field] = element.text
-    try:
-        username = helper.tiktok_get_username_from_url(crawler.browser.current_url)
-        if username:
-            info["id"] = username
-    except:
-        pass
-    info["hashtag"] = False
-    hashtags = re.findall(r'#(.+)$', hashtag.upper())
-    if hashtags:
-        hashtag_upper = hashtags[0]
-    else:
-        hashtag_upper = hashtag.upper()
-    if info.get("description"):
-        if hashtag_upper in info["description"].upper():
-            info["hashtag"] = True
-    return info
+            info[field] = element.text
+    browser_pool.set_active(crawler)
+    return info, None

@@ -15,7 +15,7 @@ UID = [
 ]
 url = "https://graph.facebook.com"
 access_tokens = list()
-with open("resources/facebook/access_token/live", 'rt') as fp:
+with open("resources/facebook/token/live", 'rt') as fp:
     for line in fp:
         access_tokens.append(line.strip())
 meta_params = {'access_token': None, 'metadata': 1}

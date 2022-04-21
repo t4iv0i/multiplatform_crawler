@@ -1,76 +1,40 @@
-from app import browser_pool
-from selenium.webdriver.common.by import By
-from constant import constant
-from module import helper
-import re
+from app import api_pool, browser_pool
+from bs4 import BeautifulSoup
 
 
-def find_child_have_multiple_content(crawler, elements):
-    num_content, content_elements = 0, []
-    for element in elements:
-        try:
-            crawler.wait_visibility_of(element)
-            if element.text != "":
-                num_content += 1
-                content_elements.append(element)
-        except:
-            pass
-    if num_content == 0 or num_content >= 2:
-        return content_elements
+def get_channel_id(url):
+    html, error = api_pool.request(url=url, typ3="youtube", method="GET")
+    if error is not None:
+        return None, error
+    soup = BeautifulSoup(html, "html.parser")
+    try:
+        channel_id = soup.select_one('meta[itemprop="channelId"]')['content']
+    except Exception as e:
+        return None, {"message": f"Can't get channel id.\nDetail: {str(e)}", "status_code": 400}
     else:
-        sub_elements = content_elements[0].find_elements(By.XPATH, "./*")
-        has_content = find_child_have_multiple_content(crawler, sub_elements)
-        if has_content:
-            return has_content
-        else:
-            return content_elements
+        return channel_id, None
 
 
-def get_info(url, hashtag):
-    crawler = browser_pool.get_inactive_browser(typ3="youtube")
-    info = dict(url=url)
+def get_info(url, field_info):
+    info = dict()
+    crawler = browser_pool.get_active(typ3="normal")
     try:
         crawler.browser.get(url)
-        crawler.wait_presence_of_element_located("/html/body")
-        body = crawler.browser.find_element(By.XPATH, "html/body")
-        crawler.wait_visibility_of(body)
-        text = body.text.lower()
-    except:
-        return "Cant load page"
-    if "Your connection was interrupted" in text or "No internet" in text:
-        return "Lost connection"
-    try:
-        crawler.wait_presence_of_element_located("//*[@id='tabsContent']")
-        tab_content = crawler.browser.find_element_by_id("tabsContent")
-        crawler.wait_visibility_of(tab_content)
-    except:
-        return info
-    for element in find_child_have_multiple_content(crawler, [tab_content]):
-        if element.text.lower() == "about":
-            element.click()
-    for field in constant.youtube_info_xpath:
-        xpath = constant.youtube_info_xpath[field]
+    except Exception as e:
+        browser_pool.reset(browser=crawler, reason="youtube")
+        return None, {"message": f"Cant load page.\nDetail: {str(e)}", "status_code": 400}
+    for field in field_info:
+        xpath = field_info[field].get("xpath")
+        if xpath is None:
+            continue
         try:
             crawler.wait_presence_of_element_located(xpath)
-            element = crawler.browser.find_element(By.XPATH, xpath)
+            element = crawler.browser.find_element_by_xpath(xpath)
             crawler.wait_visibility_of(element)
-        except:
-            pass
+        except Exception as e:
+            browser_pool.set_active(crawler)
+            return None, {"message": f"Can't get {field} info.\nDetail: {str(e)}", "status_code": 400}
         else:
             info[field] = element.text
-    try:
-        _id = helper.youtube_get_id_from_url(crawler.browser.current_url)
-        if _id:
-            info['id'] = _id
-    except:
-        pass
-    info["hashtag"] = False
-    hashtags = re.findall(r'#(.+)$', hashtag.upper())
-    if hashtags:
-        hashtag_upper = hashtags[0]
-    else:
-        hashtag_upper = hashtag.upper()
-    if info.get("description"):
-        if hashtag_upper in info["description"].upper():
-            info["hashtag"] = True
-    return info
+    browser_pool.set_active(crawler)
+    return info, None

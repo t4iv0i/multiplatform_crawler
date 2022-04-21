@@ -11,13 +11,13 @@ class User(Template):
     }
     fields = {
         "id": {"type": "string"},
-        "name": {"type": "string"},
-        "username": {"type": "string"},
-        "follower": {"type": "int"},
-        "following": {"type": "int"},
-        "like": {"type": "int"},
-        "description": {"type": "string"},
-        "share_link": {"type": "string"}
+        "name": {"type": "string", "xpath": "/html/body//h1[contains(@data-e2e, 'user-subtitle') or contains(@class, 'share-sub-title')]"},
+        "username": {"type": "string", "xpath": "/html/body//h2[contains(@data-e2e, 'user-title') or contains(@class, 'share-title')]"},
+        "follower_count": {"type": "int", "xpath": "/html/body//strong[contains(@title, 'Follower') or contains(@data-e2e, 'followers-count')]"},
+        "following_count": {"type": "int", "xpath": "/html/body//div/strong[contains(@title, 'Following') or contains(@title, 'Đang Follow') or contains(@data-e2e, 'following-count')]"},
+        "like_count": {"type": "int", "xpath": "/html/body//strong[contains(@title, 'Likes') or contains(@title, 'Thích') or contains(@data-e2e, 'likes-count')]"},
+        "description": {"type": "string", "xpath": "/html/body//h2[contains(@class, 'share-desc') or contains(@data-e2e, 'user-bio')]"},
+        "share_link": {"type": "string", "xpath": "/html/body//div[contains(@class, 'share-links')]/a"}
     }
     connections = {
 

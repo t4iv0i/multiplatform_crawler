@@ -66,7 +66,7 @@ with open('resources/proxy/smart_proxy', 'rt') as fp:
 # with open("resources/facebook/accounts", 'rt') as fp:
 #     for line in fp:
 #         facebook_credentials.append(line.strip())
-with open("resources/instagram/accounts", 'rt') as fp:
+with open("resources/instagram/account_backup", 'rt') as fp:
     for line in fp:
         instagram_credentials.append(line.strip())
 

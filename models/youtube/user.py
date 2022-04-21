@@ -11,12 +11,12 @@ class User(Template):
     }
     fields = {
         "id": {"type": "string"},
-        "name": {"type": "string"},
-        "follower": {"type": "int"},
-        "view": {"type": "int"},
-        "description": {"type": "string"},
-        "detail": {"type": "string"},
-        "date_joined": {"type": "datetime"}
+        "name": {"type": "string", "xpath": "//*[@id='text-container']"},
+        "subscriber_count": {"type": "int", "xpath": "//*[@id='subscriber-count']"},
+        "view_count": {"type": "int", "xpath": "*[@id='right-column']/yt-formatted-string[3]"},
+        "description": {"type": "string", "xpath": "//*[@id='description-container']/yt-formatted-string[2]"},
+        "detail": {"type": "string", "xpath": "//*[@id='details-container']/table"},
+        "date_joined": {"type": "datetime", "xpath": "//*[@id='right-column']/yt-formatted-string[2]"}
     }
     connections = {
 
