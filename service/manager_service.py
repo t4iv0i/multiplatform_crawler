@@ -1,5 +1,5 @@
 from service.worker_service import Worker
-from threading import Thread, RLock, Event
+from threading import Thread, Lock, Event
 from module import helper
 from time import sleep
 
@@ -12,7 +12,7 @@ class Manager(Thread):
         self.proxy_pool = proxy_pool
         self.credential_pool = credential_pool
         self.worker_pool = dict()
-        self.lock = RLock()
+        self.lock = Lock()
         self.stop_event = Event()
 
     def add_new_worker(self):

@@ -1,15 +1,23 @@
 from app import database_pool
 from models import Model
+from module import helper
 from datetime import datetime, timezone
 
 
-def client_read(database, collection, filters, fields, limit=0):
+def client_read(database, collection, filters, fields=None, limit=0):
     db_client = database_pool.get_client(database=database)
-    db_session = database_pool.get_inactive_session(database=database)
+    db_session = database_pool.get_active_session(database=database)
+    if db_session is None:
+        return None, {
+            "message": "No database session available",
+            "status_code": 400
+        }
+    filters = helper.normalize_filter(filters=filters)
     collection = db_client.database[collection]
     try:
         documents = collection.find(filter=filters, projection=fields, limit=limit, session=db_session.session)
     except Exception as e:
+        database_pool.set_active_session(db_session)
         return None, {
             "message": f"Cant read data. Detail: {str(e)}",
             "status_code": 400
@@ -22,7 +30,7 @@ def client_read(database, collection, filters, fields, limit=0):
 
 def client_upsert(database, collection, data):
     db_client = database_pool.get_client(database=database)
-    db_session = database_pool.get_inactive_session(database=database)
+    db_session = database_pool.get_active_session(database=database)
     model = Model.get(database=database, collection=collection)
     collection = db_client.database[collection]
     result, index_filters = list(), dict()
@@ -54,7 +62,8 @@ def client_upsert(database, collection, data):
 
 def client_delete(database, collection, filters, count):
     db_client = database_pool.get_client(database=database)
-    db_session = database_pool.get_inactive_session(database=database)
+    db_session = database_pool.get_active_session(database=database)
+    filters = helper.normalize_filter(filters=filters)
     collection = db_client.database[collection]
     documents = list()
     for i in range(count):

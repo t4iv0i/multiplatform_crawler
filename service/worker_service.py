@@ -39,8 +39,13 @@ class Worker(Thread):
                     if params['retry'] > 0:
                         self.rabbitmq_pool.publish(queue_name='worker', message=params)
                     continue
+                print(node_data)
                 database, collection = params["database"], params["collection"]
                 result = mongo.client_upsert(database=database, collection=collection, data=node_data)
+                print(result)
+                uuid, username = params.pop("uuid"), params.pop("username")
+                data = {"uuid": uuid, "username": username, "params": params, "data": node_data}
+                result = mongo.client_upsert(database="cache", collection="Cache", data=data)
                 print(result)
 
 

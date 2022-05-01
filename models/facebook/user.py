@@ -32,14 +32,7 @@ class User(Template):
               "short_name": {"type": "string", "version": "v13.0", "param": "short_name"},
               "website": {"type": "string", "version": "v13.0", "param": "website"},
               "work": {"type": "list<workexperience>", "version": "v13.0", "param": "work"}}
-    connections = {"subscribers": {"version": "v1.0", "param": "subscribers", "type": "list<User,Page,Group>"},
-                   "feed": {"version": "v13.0", "param": "feed", "type": "list<Link>"},
-                   "friends": {"version": "v13.0", "param": "friends", "type": "list<Link>"},
-                   "likes": {"version": "v13.0", "param": "likes", "type": "list<Link>"},
-                   "photos": {"version": "v13.0", "param": "photos", "type": "list<Link>"},
-                   "picture": {"version": "v13.0", "param": "picture", "type": "list<Link>"},
-                   "posts": {"version": "v13.0", "param": "posts", "type": "list<Post>"},
-                   "videos": {"version": "v13.0", "param": "videos", "type": "list<Link>"}}
+    connections = {}
 
     def __new__(cls, *args, **kwargs):
         return Template.__new__(cls, Class=Template, database=cls.meta["db_alias"], collection=cls.meta["collection"])

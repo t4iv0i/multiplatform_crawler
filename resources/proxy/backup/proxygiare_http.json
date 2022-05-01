@@ -1,0 +1,17 @@
+[
+  {"typ3": "resilient", "scheme": "http", "username": "VNS34886", "password": "dzgfhhfh", "hostname": "14.225.50.167", "port": 56789},
+  {"typ3": "resilient", "scheme": "http", "username": "VNS82965", "password": "dzgfhhfh", "hostname": "14.225.50.166", "port": 56789},
+  {"typ3": "resilient", "scheme": "http", "username": "VNS75221", "password": "dzgfhhfh", "hostname": "14.225.50.165", "port": 56789},
+  {"typ3": "resilient", "scheme": "http", "username": "VNS96870", "password": "dzgfhhfh", "hostname": "14.225.50.164", "port": 56789},
+  {"typ3": "resilient", "scheme": "http", "username": "VNS65371", "password": "dzgfhhfh", "hostname": "14.225.50.163", "port": 56789},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.230.108", "port": 9034},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.230.110", "port": 9034},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.230.109", "port": 9034},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.230.111", "port": 9034},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.230.117", "port": 9034},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.229.194", "port": 2094},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.231.82", "port": 2094},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.229.68", "port": 2094},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.229.69", "port": 2094},
+  {"typ3": "resilient", "scheme": "http", "username": "nc699427", "password": "90cecbe18", "hostname": "103.90.229.40", "port": 2094}
+]

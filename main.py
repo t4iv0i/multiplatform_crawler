@@ -2,10 +2,10 @@ import argparse
 import config
 from flask import Flask
 from flask_jwt_extended import JWTManager
-from api.v1_0.health_check import bp_health_check
-from api.v1_0.login import bp_login
-from api.v1_0.get_info import bp_get_info
-from api.v1_0.post_params import bp_post_params
+from api.v2_3.health_check import bp_health_check
+from api.v2_3.login import bp_login
+from api.v2_3.get_info import bp_get_info
+from api.v2_3.post_params import bp_post_params
 
 
 app = Flask(__name__)

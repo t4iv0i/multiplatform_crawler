@@ -34,15 +34,7 @@ class Page(Template):
               "website": {"type": "string", "version": "v13.0", "param": "website"},
               "were_here_count": {"type": "unsigned int32", "version": "v13.0", "param": "were_here_count"},
     }
-    connections = {
-                   "feed": {"version": "v13.0", "param": "feed", "type": "list<Link>"},
-                   "groups": {"version": "v13.0", "param": "groups", "type": "list<Link>"},
-                   "likes": {"version": "v13.0", "param": "likes", "type": "list<Link>"},
-                   "locations": {"version": "v13.0", "param": "locations", "type": "list<Link>"},
-                   "photos": {"version": "v13.0", "param": "photos", "type": "list<Link>"},
-                   "picture": {"version": "v13.0", "param": "picture", "type": "list<Link>"},
-                   "posts": {"version": "v13.0", "param": "posts", "type": "list<Link>"},
-                   "videos": {"version": "v13.0", "param": "videos", "type": "list<Link>"}}
+    connections = {}
 
     def __new__(cls, *args, **kwargs):
         return Template.__new__(cls, Class=Template, database=cls.meta["db_alias"], collection=cls.meta["collection"])

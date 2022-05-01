@@ -7,20 +7,17 @@ class User(Template):
         'collection': 'Role'
     }
     fields = {
-        "username": (str, True),
-        "hash_password": (str, True),
-        "status": (str, True),
+        "username": {"type": "str"},
+        "hash_password": {"type": "str"},
+        "roles": {"type": "list"},
+        "status": {"type": "str"},
     }
-    edges = {
-        "roles": (list, True),
-    }
-    system = {
-        "created_time": (datetime, True),
-        "updated_time": (datetime, True)
+    connections = {
     }
 
     def __new__(cls, *args, **kwargs):
         return Template.__new__(cls, Class=Template, database=cls.meta["db_alias"], collection=cls.meta["collection"])
 
     def __init__(self, data):
-        super().__init__(fields=self.fields, edges=self.edges, system=self.system, data=data)
+        if data and type(data) == dict:
+            super().__init__(data=data)

@@ -21,12 +21,7 @@ class Group(Template):
               "subdomain": {"type": "string", "version": "v13.0", "param": "subdomain"},
               "updated_time": {"type": "datetime", "version": "v13.0", "param": "updated_time"},
     }
-    connections = {
-                   "member_requests": {"version": "v13.0", "param": "member_requests", "type": "list<Link>"},
-                   "feed": {"version": "v13.0", "param": "feed", "type": "list<Link>"},
-                   "groups": {"version": "v13.0", "param": "groups", "type": "list<Link>"},
-                   "picture": {"version": "v13.0", "param": "picture", "type": "list<Link>"}
-    }
+    connections = {}
 
     def __new__(cls, *args, **kwargs):
         return Template.__new__(cls, Class=Template, database=cls.meta["db_alias"], collection=cls.meta["collection"])

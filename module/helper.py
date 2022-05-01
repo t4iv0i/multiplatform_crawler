@@ -1,7 +1,7 @@
-from selenium.webdriver.common.by import By
 import re, string, zipfile, json
 from constant import constant
 from datetime import datetime, timedelta, timezone
+from dateutil.parser import parse
 from os import path, listdir
 from os import remove
 
@@ -101,7 +101,7 @@ def create_proxyauth_extension(proxy_host, proxy_port,
                                proxy_username, proxy_password,
                                scheme='http', plugin_path=None):
     if plugin_path is None:
-        plugin_path = 'resources/proxy/extensions/proxy_auth_plugin.zip'
+        plugin_path = '/home/t4iv0i/PycharmProjects/multiplatform_crawler/resources/proxy/extensions/proxy_auth_plugin.zip'
     manifest_json = """
     {
         "version": "1.0.0",
@@ -185,3 +185,51 @@ def scan(root_dir, pattern=None, json_type=False):
                         result.append(data)
             # remove(file_path)
     return result
+
+
+def convert(record):
+    if type(record) == datetime:
+        return record.strftime(constant.DATETIME_FORMAT)
+    elif type(record) == dict:
+        new_record = dict()
+        for field, value in record.items():
+            new_record[field] = convert(value)
+        return new_record
+    elif type(record) == list:
+        new_record = list()
+        for sub_record in record:
+            new_record.append(convert(sub_record))
+        return new_record
+    elif type(record) in [bool, int, str, tuple, float]:
+        return record
+    else:
+        return str(record)
+
+
+def normalize_filter(filters):
+    if type(filters) == list:
+        new_filters = list()
+        for _filter in filters:
+            new_filters.append(normalize_filter(_filter))
+    elif type(filters) == dict:
+        new_filters = dict()
+        for key, value in filters.items():
+            new_filters[key] = normalize_filter(value)
+    else:
+        try:
+            new_filters = parse(filters)
+        except:
+            new_filters = filters
+    return new_filters
+
+
+def number_extractor(text):
+    try:
+        number_text, unit_text = re.findall(r'(\d+[\.\,]*\d*[\.\,]*\d*[\.\,]*\d*[\.\,]*\d*)\s*(\w*)', text)[0]
+    except:
+        return None
+    number, unit = number_text.replace(',', '.'), unit_text.upper()
+    if constant.teen_code.get(unit):
+        return int(float(number) * constant.teen_code[unit])
+    else:
+        return int(number.replace('.', ''))

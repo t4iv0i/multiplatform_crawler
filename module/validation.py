@@ -1,9 +1,7 @@
 import re
-
 from module import mongo
 from module import helper
 from models import Model
-from dateutil.parser import parse
 
 
 def validate_login(data):
@@ -28,37 +26,6 @@ def validate_login(data):
         return True, None
 
 
-def normalize_filter(filters, model):
-    normalized_filters = filters.copy()
-    fields = model.fields.copy()
-    fields.update(model.system)
-    for field in filters:
-        if fields.get(field):
-            if fields[field]["type"] == "datetime":
-                _filter = filters[field]
-                if type(_filter) == str:
-                    try:
-                        _filter = parse(_filter)
-                    except:
-                        return None, {
-                            "message": f"Can't parse {field} of filters to datetime",
-                            "status_code": 400
-                        }
-                elif type(_filter) == dict:
-                    for operator in _filter.keys():
-                        try:
-                            _filter[operator] = parse(_filter)
-                        except:
-                            return None, {
-                                "message": f"Can't parse {field} of filters to datetime",
-                                "status_code": 400
-                            }
-                normalized_filters[field] = _filter
-        else:
-            return None, None
-    return normalized_filters, None
-
-
 def validate_requirements(database, params):
     new_params = params.copy()
     collection = params["collection"]
@@ -75,12 +42,15 @@ def validate_requirements(database, params):
                 "message": "Filters must be dict",
                 "status_code": 400
             }
-        normalized_filters, error = normalize_filter(filters, model)
-        if error is not None:
-            return None, error
-        if normalized_filters is None:
-            return None, None
-        new_params["filters"] = normalized_filters
+        for field in filters:
+            if model.fields.get(field) or model.system.get(field):
+                continue
+            else:
+                return None, {
+                    "message": f"Filter field {field} not in the {database}.{collection} fields.",
+                    "status_code": 400
+                }
+        new_params["filters"] = filters
     fields = params.get("fields", [])
     for field in fields:
         if model.fields.get(field) is None:
@@ -88,8 +58,6 @@ def validate_requirements(database, params):
                 "message": f"Field {field} not in {database}.{collection}",
                 "status_code": 400
             }
-    if "id" not in fields:
-        fields.append("id")
     new_params["fields"] = fields
     limit = params.get("limit")
     if limit:
@@ -266,10 +234,10 @@ def validate_permission(params):
     roles, error = mongo.client_read(database="account", collection="User", filters={"username": username}, fields=["roles"])
     if error is not None:
         return error
-    for role_id in roles[0]["roles"]:
-        role, error = mongo.client_read(database="account", collection="Role", filters={"_id": role_id["destination_id"]}, fields=None)
+    for reference in roles[0]["roles"]:
+        role, error = mongo.client_read(database="account", collection="Role", filters={"_id": reference["destination_id"]})
         if error is not None:
-             return error
+            return error
         if role and role[0]["database"] == database:
             if collection:
                 if collection in role[0]["collection"]:
@@ -280,8 +248,7 @@ def validate_permission(params):
                         "status_code": 400
                     }
             return None
-    else:
-        return {
-                "message": f"User {username} don't have permission to access {database}",
-                "status_code": 400
-            }
+    return {
+            "message": f"User {username} don't have permission to access {database}",
+            "status_code": 400
+        }
